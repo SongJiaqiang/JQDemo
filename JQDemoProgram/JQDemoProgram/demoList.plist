@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>code</key>
+		<string>001</string>
+		<key>name</key>
+		<string>JQToast</string>
+		<key>desc</key>
+		<string>类似Android的Toast</string>
+		<key>controller</key>
+		<string>JQToastController</string>
+	</dict>
+	<dict>
+		<key>code</key>
+		<string>002</string>
+		<key>name</key>
+		<string>JQTimePicker</string>
+		<key>desc</key>
+		<string>时间选择器</string>
+		<key>controller</key>
+		<string>JQTimePickerController</string>
+	</dict>
+	<dict>
+		<key>code</key>
+		<string>003</string>
+		<key>name</key>
+		<string>JQImagePicker</string>
+		<key>desc</key>
+		<string>图片选择器</string>
+		<key>controller</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>code</key>
+		<string>004</string>
+		<key>name</key>
+		<string>JQLocationPicker</string>
+		<key>desc</key>
+		<string>地点选择器</string>
+		<key>controller</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>code</key>
+		<string>005</string>
+		<key>name</key>
+		<string>JQCell</string>
+		<key>desc</key>
+		<string>tableView单元格</string>
+		<key>controller</key>
+		<string></string>
+	</dict>
+</array>
+</plist>
