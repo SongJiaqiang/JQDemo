@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DBF24DCA1AF1CE1900B4DA8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF24DC91AF1CE1900B4DA8D /* main.m */; };
-		DBF24DCD1AF1CE1900B4DA8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF24DCC1AF1CE1900B4DA8D /* AppDelegate.m */; };
-		DBF24DD01AF1CE1900B4DA8D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF24DCF1AF1CE1900B4DA8D /* MainViewController.m */; };
 		DBF24DD31AF1CE1900B4DA8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF24DD11AF1CE1900B4DA8D /* Main.storyboard */; };
-		DBF24DD51AF1CE1900B4DA8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF24DD41AF1CE1900B4DA8D /* Images.xcassets */; };
 		DBF24DD81AF1CE1900B4DA8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBF24DD61AF1CE1900B4DA8D /* LaunchScreen.xib */; };
 		DBF24DE41AF1CE1900B4DA8D /* JQDemoProgramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF24DE31AF1CE1900B4DA8D /* JQDemoProgramTests.m */; };
-		DBF24DEE1AF1DF9800B4DA8D /* demoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBF24DED1AF1DF9800B4DA8D /* demoList.plist */; };
+		DBF24DFA1AF1F09200B4DA8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF24DF11AF1F09200B4DA8D /* AppDelegate.m */; };
+		DBF24DFB1AF1F09200B4DA8D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF24DF31AF1F09200B4DA8D /* MainViewController.m */; };
+		DBF24DFC1AF1F09200B4DA8D /* demoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBF24DF51AF1F09200B4DA8D /* demoList.plist */; };
+		DBF24DFD1AF1F09200B4DA8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF24DF61AF1F09200B4DA8D /* Images.xcassets */; };
+		DBF24E081AF1F1CB00B4DA8D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBF24E061AF1F1CB00B4DA8D /* Info.plist */; };
+		DBF24E091AF1F1CB00B4DA8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF24E071AF1F1CB00B4DA8D /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,19 +30,19 @@
 
 /* Begin PBXFileReference section */
 		DBF24DC41AF1CE1900B4DA8D /* JQDemoProgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JQDemoProgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBF24DC81AF1CE1900B4DA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBF24DC91AF1CE1900B4DA8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DBF24DCB1AF1CE1900B4DA8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DBF24DCC1AF1CE1900B4DA8D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DBF24DCE1AF1CE1900B4DA8D /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		DBF24DCF1AF1CE1900B4DA8D /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		DBF24DD21AF1CE1900B4DA8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DBF24DD41AF1CE1900B4DA8D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DBF24DD71AF1CE1900B4DA8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DBF24DDD1AF1CE1900B4DA8D /* JQDemoProgramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JQDemoProgramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF24DE21AF1CE1900B4DA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBF24DE31AF1CE1900B4DA8D /* JQDemoProgramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQDemoProgramTests.m; sourceTree = "<group>"; };
-		DBF24DED1AF1DF9800B4DA8D /* demoList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = demoList.plist; sourceTree = "<group>"; };
+		DBF24DF01AF1F09200B4DA8D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DBF24DF11AF1F09200B4DA8D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DBF24DF21AF1F09200B4DA8D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		DBF24DF31AF1F09200B4DA8D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		DBF24DF51AF1F09200B4DA8D /* demoList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = demoList.plist; sourceTree = "<group>"; };
+		DBF24DF61AF1F09200B4DA8D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DBF24E061AF1F1CB00B4DA8D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBF24E071AF1F1CB00B4DA8D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,26 +84,11 @@
 		DBF24DC61AF1CE1900B4DA8D /* JQDemoProgram */ = {
 			isa = PBXGroup;
 			children = (
-				DBF24DCB1AF1CE1900B4DA8D /* AppDelegate.h */,
-				DBF24DCC1AF1CE1900B4DA8D /* AppDelegate.m */,
-				DBF24DCE1AF1CE1900B4DA8D /* MainViewController.h */,
-				DBF24DCF1AF1CE1900B4DA8D /* MainViewController.m */,
-				DBF24DD11AF1CE1900B4DA8D /* Main.storyboard */,
-				DBF24DD41AF1CE1900B4DA8D /* Images.xcassets */,
-				DBF24DD61AF1CE1900B4DA8D /* LaunchScreen.xib */,
-				DBF24DC71AF1CE1900B4DA8D /* Supporting Files */,
+				DBF24DEF1AF1F09200B4DA8D /* Main */,
+				DBF24DF41AF1F09200B4DA8D /* Resouce */,
+				DBF24E0A1AF1F20E00B4DA8D /* Support */,
 			);
 			path = JQDemoProgram;
-			sourceTree = "<group>";
-		};
-		DBF24DC71AF1CE1900B4DA8D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				DBF24DC81AF1CE1900B4DA8D /* Info.plist */,
-				DBF24DC91AF1CE1900B4DA8D /* main.m */,
-				DBF24DED1AF1DF9800B4DA8D /* demoList.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		DBF24DE01AF1CE1900B4DA8D /* JQDemoProgramTests */ = {
@@ -120,6 +106,37 @@
 				DBF24DE21AF1CE1900B4DA8D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBF24DEF1AF1F09200B4DA8D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DBF24DF01AF1F09200B4DA8D /* AppDelegate.h */,
+				DBF24DF11AF1F09200B4DA8D /* AppDelegate.m */,
+				DBF24DF21AF1F09200B4DA8D /* MainViewController.h */,
+				DBF24DF31AF1F09200B4DA8D /* MainViewController.m */,
+				DBF24DD11AF1CE1900B4DA8D /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DBF24DF41AF1F09200B4DA8D /* Resouce */ = {
+			isa = PBXGroup;
+			children = (
+				DBF24DF61AF1F09200B4DA8D /* Images.xcassets */,
+				DBF24DD61AF1CE1900B4DA8D /* LaunchScreen.xib */,
+				DBF24DF51AF1F09200B4DA8D /* demoList.plist */,
+			);
+			path = Resouce;
+			sourceTree = "<group>";
+		};
+		DBF24E0A1AF1F20E00B4DA8D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				DBF24E061AF1F1CB00B4DA8D /* Info.plist */,
+				DBF24E071AF1F1CB00B4DA8D /* main.m */,
+			);
+			name = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,9 +220,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBF24DD31AF1CE1900B4DA8D /* Main.storyboard in Resources */,
-				DBF24DEE1AF1DF9800B4DA8D /* demoList.plist in Resources */,
+				DBF24DFD1AF1F09200B4DA8D /* Images.xcassets in Resources */,
 				DBF24DD81AF1CE1900B4DA8D /* LaunchScreen.xib in Resources */,
-				DBF24DD51AF1CE1900B4DA8D /* Images.xcassets in Resources */,
+				DBF24E081AF1F1CB00B4DA8D /* Info.plist in Resources */,
+				DBF24DFC1AF1F09200B4DA8D /* demoList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,9 +241,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBF24DD01AF1CE1900B4DA8D /* MainViewController.m in Sources */,
-				DBF24DCD1AF1CE1900B4DA8D /* AppDelegate.m in Sources */,
-				DBF24DCA1AF1CE1900B4DA8D /* main.m in Sources */,
+				DBF24DFA1AF1F09200B4DA8D /* AppDelegate.m in Sources */,
+				DBF24E091AF1F1CB00B4DA8D /* main.m in Sources */,
+				DBF24DFB1AF1F09200B4DA8D /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +272,7 @@
 				DBF24DD21AF1CE1900B4DA8D /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		DBF24DD61AF1CE1900B4DA8D /* LaunchScreen.xib */ = {
@@ -262,6 +281,7 @@
 				DBF24DD71AF1CE1900B4DA8D /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -422,6 +442,7 @@
 				DBF24DE91AF1CE1900B4DA8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBF24DEA1AF1CE1900B4DA8D /* Build configuration list for PBXNativeTarget "JQDemoProgramTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +451,7 @@
 				DBF24DEC1AF1CE1900B4DA8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
