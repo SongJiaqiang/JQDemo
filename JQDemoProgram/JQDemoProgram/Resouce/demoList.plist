@@ -4,6 +4,16 @@
 <array>
 	<dict>
 		<key>code</key>
+		<string>000</string>
+		<key>name</key>
+		<string>Test</string>
+		<key>desc</key>
+		<string>测试入口</string>
+		<key>controller</key>
+		<string>JQTestViewController</string>
+	</dict>
+	<dict>
+		<key>code</key>
 		<string>001</string>
 		<key>name</key>
 		<string>JQToast</string>

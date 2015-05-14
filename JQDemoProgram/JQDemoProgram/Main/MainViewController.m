@@ -8,6 +8,8 @@
 
 #import "MainViewController.h"
 
+#import "JQTestViewController.h"
+
 @interface MainViewController ()
 
 /**
@@ -49,10 +51,10 @@
         CGFloat w = 50.0;
         CGFloat h = 50.0;
         CGFloat x = self.view.bounds.size.width - w - 20.0;
-        CGFloat y = self.view.bounds.size.height - h - 60.0;
+        CGFloat y = self.view.bounds.size.height - h - 100.0;
         button.frame = CGRectMake(x, y, w, h);
         
-        [self.navigationController.view addSubview:button];
+        [self.view addSubview:button];
         _feedbackButton = button;
     }
     return _feedbackButton;
@@ -67,6 +69,14 @@
     
     // feedback
     [self.feedbackButton addTarget:self action:@selector(feedbackButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    // 旋转button
+    [self rotate:self.feedbackButton];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -102,6 +112,11 @@
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+//    NSDictionary *demoInfo = self.demoList[indexPath.row];
+    
+    JQTestViewController *demoController = [[JQTestViewController alloc] init];
+    [self.navigationController pushViewController:demoController animated:YES];
     
     
     
@@ -115,7 +130,6 @@
 -(void) feedbackButtonClick:(UIButton *)button{
     NSLog(@"进入用户反馈界面");
     
-    [self circling:button];
     
 }
 
@@ -127,11 +141,17 @@
  *
  *  @param view 旋转的视图
  */
--(void) circling:(UIView *)view{
+-(void) rotate:(UIView *)view{
     
-    [UIView animateWithDuration:1.0 animations:^{
-        view.transform = CGAffineTransformRotate(view.transform, -M_PI);
-    }];
+    CABasicAnimation* rotationAnimation;
+    rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    rotationAnimation.toValue = [NSNumber numberWithFloat: -M_PI * 2.0 ];
+    rotationAnimation.duration = JQMainButtonRotateDuration;
+    rotationAnimation.cumulative = YES;
+    rotationAnimation.repeatCount = CGFLOAT_MAX;
+    
+    [view.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
+    
     
 }
 
