@@ -61,6 +61,16 @@
 		<string>tableView单元格</string>
 		<key>controller</key>
 		<string></string>
-	</dict>
+    </dict>
+    <dict>
+        <key>code</key>
+        <string>006</string>
+        <key>name</key>
+        <string>SlideBack</string>
+        <key>desc</key>
+        <string>全局滑动返回</string>
+        <key>controller</key>
+        <string></string>
+    </dict>
 </array>
 </plist>

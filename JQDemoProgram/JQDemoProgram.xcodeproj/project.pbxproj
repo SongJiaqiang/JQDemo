@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB9349881B7F938D0086A490 /* SlideBackMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9349871B7F938D0086A490 /* SlideBackMainController.m */; };
+		DB9349911B7F94890086A490 /* A2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB93498A1B7F94890086A490 /* A2ViewController.m */; };
+		DB9349921B7F94890086A490 /* A3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB93498C1B7F94890086A490 /* A3ViewController.m */; };
+		DB9349931B7F94890086A490 /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB93498E1B7F94890086A490 /* AViewController.m */; };
+		DB9349941B7F948A0086A490 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9349901B7F94890086A490 /* BViewController.m */; };
+		DB93499A1B7F9D050086A490 /* SlideBackNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9349991B7F9D050086A490 /* SlideBackNavigationController.m */; };
 		DBC712881B046AD700A690C5 /* JQTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC712861B046AD700A690C5 /* JQTestViewController.m */; };
 		DBC712891B046AD700A690C5 /* JQTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBC712871B046AD700A690C5 /* JQTestViewController.xib */; };
 		DBC712B41B046C8F00A690C5 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC7128E1B046C8F00A690C5 /* AFHTTPRequestOperation.m */; };
@@ -51,6 +57,18 @@
 
 /* Begin PBXFileReference section */
 		DB2DDABE1B023F8A008C03BE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DB9349861B7F938D0086A490 /* SlideBackMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SlideBackMainController.h; path = Demos/SlideBack/SlideBackMainController.h; sourceTree = "<group>"; };
+		DB9349871B7F938D0086A490 /* SlideBackMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SlideBackMainController.m; path = Demos/SlideBack/SlideBackMainController.m; sourceTree = "<group>"; };
+		DB9349891B7F94890086A490 /* A2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A2ViewController.h; path = Demos/SlideBack/A2ViewController.h; sourceTree = "<group>"; };
+		DB93498A1B7F94890086A490 /* A2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A2ViewController.m; path = Demos/SlideBack/A2ViewController.m; sourceTree = "<group>"; };
+		DB93498B1B7F94890086A490 /* A3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3ViewController.h; path = Demos/SlideBack/A3ViewController.h; sourceTree = "<group>"; };
+		DB93498C1B7F94890086A490 /* A3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3ViewController.m; path = Demos/SlideBack/A3ViewController.m; sourceTree = "<group>"; };
+		DB93498D1B7F94890086A490 /* AViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AViewController.h; path = Demos/SlideBack/AViewController.h; sourceTree = "<group>"; };
+		DB93498E1B7F94890086A490 /* AViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AViewController.m; path = Demos/SlideBack/AViewController.m; sourceTree = "<group>"; };
+		DB93498F1B7F94890086A490 /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BViewController.h; path = Demos/SlideBack/BViewController.h; sourceTree = "<group>"; };
+		DB9349901B7F94890086A490 /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BViewController.m; path = Demos/SlideBack/BViewController.m; sourceTree = "<group>"; };
+		DB9349981B7F9D050086A490 /* SlideBackNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SlideBackNavigationController.h; path = Demos/SlideBack/SlideBackNavigationController.h; sourceTree = "<group>"; };
+		DB9349991B7F9D050086A490 /* SlideBackNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SlideBackNavigationController.m; path = Demos/SlideBack/SlideBackNavigationController.m; sourceTree = "<group>"; };
 		DBC712851B046AD700A690C5 /* JQTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JQTestViewController.h; path = Test/JQTestViewController.h; sourceTree = "<group>"; };
 		DBC712861B046AD700A690C5 /* JQTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JQTestViewController.m; path = Test/JQTestViewController.m; sourceTree = "<group>"; };
 		DBC712871B046AD700A690C5 /* JQTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JQTestViewController.xib; path = Test/JQTestViewController.xib; sourceTree = "<group>"; };
@@ -126,6 +144,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB9349841B7F93180086A490 /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				DB9349851B7F93260086A490 /* SlideBack */,
+			);
+			name = Demos;
+			sourceTree = "<group>";
+		};
+		DB9349851B7F93260086A490 /* SlideBack */ = {
+			isa = PBXGroup;
+			children = (
+				DB9349861B7F938D0086A490 /* SlideBackMainController.h */,
+				DB9349871B7F938D0086A490 /* SlideBackMainController.m */,
+				DB9349891B7F94890086A490 /* A2ViewController.h */,
+				DB93498A1B7F94890086A490 /* A2ViewController.m */,
+				DB93498B1B7F94890086A490 /* A3ViewController.h */,
+				DB93498C1B7F94890086A490 /* A3ViewController.m */,
+				DB93498D1B7F94890086A490 /* AViewController.h */,
+				DB93498E1B7F94890086A490 /* AViewController.m */,
+				DB93498F1B7F94890086A490 /* BViewController.h */,
+				DB9349901B7F94890086A490 /* BViewController.m */,
+				DB9349981B7F9D050086A490 /* SlideBackNavigationController.h */,
+				DB9349991B7F9D050086A490 /* SlideBackNavigationController.m */,
+			);
+			name = SlideBack;
+			sourceTree = "<group>";
+		};
 		DBC712841B046AA800A690C5 /* Test */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +271,7 @@
 		DBF24DC61AF1CE1900B4DA8D /* JQDemoProgram */ = {
 			isa = PBXGroup;
 			children = (
+				DB9349841B7F93180086A490 /* Demos */,
 				DBF24DEF1AF1F09200B4DA8D /* Main */,
 				DBC712841B046AA800A690C5 /* Test */,
 				DBF24DF41AF1F09200B4DA8D /* Resouce */,
@@ -396,6 +442,8 @@
 				DBC712B51B046C8F00A690C5 /* AFHTTPRequestOperationManager.m in Sources */,
 				DBC712B91B046C8F00A690C5 /* AFURLConnectionOperation.m in Sources */,
 				DBC712B41B046C8F00A690C5 /* AFHTTPRequestOperation.m in Sources */,
+				DB93499A1B7F9D050086A490 /* SlideBackNavigationController.m in Sources */,
+				DB9349881B7F938D0086A490 /* SlideBackMainController.m in Sources */,
 				DBC712C51B046C8F00A690C5 /* UIRefreshControl+AFNetworking.m in Sources */,
 				DBF24DFB1AF1F09200B4DA8D /* MainViewController.m in Sources */,
 				DBC712BA1B046C8F00A690C5 /* AFURLRequestSerialization.m in Sources */,
@@ -407,9 +455,13 @@
 				DBC712C61B046C8F00A690C5 /* UIWebView+AFNetworking.m in Sources */,
 				DBC712BB1B046C8F00A690C5 /* AFURLResponseSerialization.m in Sources */,
 				DBC712BC1B046C8F00A690C5 /* AFURLSessionManager.m in Sources */,
+				DB9349931B7F94890086A490 /* AViewController.m in Sources */,
+				DB9349921B7F94890086A490 /* A3ViewController.m in Sources */,
+				DB9349941B7F948A0086A490 /* BViewController.m in Sources */,
 				DBC712881B046AD700A690C5 /* JQTestViewController.m in Sources */,
 				DBC712C01B046C8F00A690C5 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				DBC712BF1B046C8F00A690C5 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				DB9349911B7F94890086A490 /* A2ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +591,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: XingYi Qu (44AKZVT27M)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JQDemoProgram/Main/PrefixHeader.pch";
 				INFOPLIST_FILE = JQDemoProgram/Info.plist;
@@ -551,6 +604,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: XingYi Qu (44AKZVT27M)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JQDemoProgram/Main/PrefixHeader.pch";
 				INFOPLIST_FILE = JQDemoProgram/Info.plist;

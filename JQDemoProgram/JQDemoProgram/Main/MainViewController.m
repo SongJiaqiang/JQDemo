@@ -9,6 +9,9 @@
 #import "MainViewController.h"
 
 #import "JQTestViewController.h"
+#import "SlideBackMainController.h"
+
+
 
 @interface MainViewController ()
 
@@ -51,10 +54,10 @@
         CGFloat w = 50.0;
         CGFloat h = 50.0;
         CGFloat x = self.view.bounds.size.width - w - 20.0;
-        CGFloat y = self.view.bounds.size.height - h - 100.0;
+        CGFloat y = self.view.bounds.size.height - h - 30.0;
         button.frame = CGRectMake(x, y, w, h);
         
-        [self.view addSubview:button];
+        [self.navigationController.view addSubview:button];
         _feedbackButton = button;
     }
     return _feedbackButton;
@@ -66,6 +69,9 @@
     
     // nav
     self.navigationItem.title = @"JQDemo";
+    
+    // tableview
+
     
     // feedback
     [self.feedbackButton addTarget:self action:@selector(feedbackButtonClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -113,12 +119,28 @@
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
-//    NSDictionary *demoInfo = self.demoList[indexPath.row];
+    NSDictionary *demoInfo = self.demoList[indexPath.row];
     
-    JQTestViewController *demoController = [[JQTestViewController alloc] init];
-    [self.navigationController pushViewController:demoController animated:YES];
+
+    NSString *code = demoInfo[@"code"];
+    if (code == nil) {
+        NSLog(@"code错误，请检查demo列表中的code格式是否正确。");
+        return;
+    }
     
     
+    if ([@"001" isEqualToString:code]) {
+        [self.navigationController pushViewController:[JQTestViewController new] animated:YES];
+        
+    } else if ([@"002" isEqualToString:code]) {
+        
+        
+        
+    } else if ([@"006" isEqualToString:code]) {
+        
+        [self.navigationController pushViewController:[SlideBackMainController new] animated:YES];
+        
+    }
     
 }
 
