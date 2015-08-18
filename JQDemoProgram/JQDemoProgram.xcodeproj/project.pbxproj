@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8CE77F9E9B80E932231DB310 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04684D3D2C5500E02878FFC0 /* libPods.a */; };
+		DB223FE41B831D350028847D /* OpenAppURLMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB223FE31B831D350028847D /* OpenAppURLMainController.m */; };
 		DB9349881B7F938D0086A490 /* SlideBackMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9349871B7F938D0086A490 /* SlideBackMainController.m */; };
 		DB9349911B7F94890086A490 /* A2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB93498A1B7F94890086A490 /* A2ViewController.m */; };
 		DB9349921B7F94890086A490 /* A3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB93498C1B7F94890086A490 /* A3ViewController.m */; };
@@ -41,6 +42,8 @@
 		04684D3D2C5500E02878FFC0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7651C455C3354E5817B8A7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D319D40B5C3D2736DF370D9B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		DB223FE21B831D350028847D /* OpenAppURLMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenAppURLMainController.h; path = Demos/OpenAppURL/OpenAppURLMainController.h; sourceTree = "<group>"; };
+		DB223FE31B831D350028847D /* OpenAppURLMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenAppURLMainController.m; path = Demos/OpenAppURL/OpenAppURLMainController.m; sourceTree = "<group>"; };
 		DB2DDABE1B023F8A008C03BE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		DB9349861B7F938D0086A490 /* SlideBackMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SlideBackMainController.h; path = Demos/SlideBack/SlideBackMainController.h; sourceTree = "<group>"; };
 		DB9349871B7F938D0086A490 /* SlideBackMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SlideBackMainController.m; path = Demos/SlideBack/SlideBackMainController.m; sourceTree = "<group>"; };
@@ -101,9 +104,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DB223FE11B831B400028847D /* OpenAppURL */ = {
+			isa = PBXGroup;
+			children = (
+				DB223FE21B831D350028847D /* OpenAppURLMainController.h */,
+				DB223FE31B831D350028847D /* OpenAppURLMainController.m */,
+			);
+			name = OpenAppURL;
+			sourceTree = "<group>";
+		};
 		DB9349841B7F93180086A490 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				DB223FE11B831B400028847D /* OpenAppURL */,
 				DB9349851B7F93260086A490 /* SlideBack */,
 			);
 			name = Demos;
@@ -376,6 +389,7 @@
 				DBF24DFA1AF1F09200B4DA8D /* AppDelegate.m in Sources */,
 				DBF24E091AF1F1CB00B4DA8D /* main.m in Sources */,
 				DB93499A1B7F9D050086A490 /* SlideBackNavigationController.m in Sources */,
+				DB223FE41B831D350028847D /* OpenAppURLMainController.m in Sources */,
 				DB9349881B7F938D0086A490 /* SlideBackMainController.m in Sources */,
 				DBF24DFB1AF1F09200B4DA8D /* MainViewController.m in Sources */,
 				DB9349931B7F94890086A490 /* AViewController.m in Sources */,

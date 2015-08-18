@@ -72,5 +72,15 @@
         <key>controller</key>
         <string></string>
     </dict>
+    <dict>
+        <key>code</key>
+        <string>007</string>
+        <key>name</key>
+        <string>OpenAppURL</string>
+        <key>desc</key>
+        <string>跳转到其它app</string>
+        <key>controller</key>
+        <string></string>
+    </dict>
 </array>
 </plist>

@@ -10,7 +10,7 @@
 
 #import "JQTestViewController.h"
 #import "SlideBackMainController.h"
-
+#import "OpenAppURLMainController.h"
 
 
 @interface MainViewController ()
@@ -81,13 +81,14 @@
     [super viewWillAppear:animated];
     
     // 旋转button
+    self.feedbackButton.hidden = NO;
     [self rotate:self.feedbackButton];
 
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    self.feedbackButton.hidden = YES;
 }
 
 
@@ -139,6 +140,10 @@
     } else if ([@"006" isEqualToString:code]) {
         
         [self.navigationController pushViewController:[SlideBackMainController new] animated:YES];
+        
+    } else if ([@"007" isEqualToString:code]) {
+        
+        [self.navigationController pushViewController:[OpenAppURLMainController new] animated:YES];
         
     }
     

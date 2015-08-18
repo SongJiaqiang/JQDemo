@@ -54,7 +54,7 @@ UITableViewDelegate, UITableViewDataSource
     [super viewDidLoad];
     
     // nav
-    self.navigationItem.title = @"Home";
+    self.navigationItem.title = @"滑动返回";
     
     
 }
