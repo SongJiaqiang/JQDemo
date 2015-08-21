@@ -116,6 +116,8 @@
 		DB9349841B7F93180086A490 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				DB99517B1B87577900703ACF /* DrawingBoard */,
+				DB99517A1B8756C900703ACF /* SaveImageToAlbum */,
 				DB223FE11B831B400028847D /* OpenAppURL */,
 				DB9349851B7F93260086A490 /* SlideBack */,
 			);
@@ -139,6 +141,20 @@
 				DB9349991B7F9D050086A490 /* SlideBackNavigationController.m */,
 			);
 			name = SlideBack;
+			sourceTree = "<group>";
+		};
+		DB99517A1B8756C900703ACF /* SaveImageToAlbum */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SaveImageToAlbum;
+			sourceTree = "<group>";
+		};
+		DB99517B1B87577900703ACF /* DrawingBoard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DrawingBoard;
 			sourceTree = "<group>";
 		};
 		DBC712841B046AA800A690C5 /* Test */ = {
