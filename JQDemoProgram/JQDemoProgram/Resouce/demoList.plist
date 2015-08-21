@@ -82,5 +82,25 @@
         <key>controller</key>
         <string></string>
     </dict>
+    <dict>
+        <key>code</key>
+        <string>008</string>
+        <key>name</key>
+        <string>Canvas</string>
+        <key>desc</key>
+        <string>画布、画板、涂鸦</string>
+        <key>controller</key>
+        <string></string>
+    </dict>
+    <dict>
+        <key>code</key>
+        <string>009</string>
+        <key>name</key>
+        <string>SaveImageToAlbum</string>
+        <key>desc</key>
+        <string>保存图片、视频到相册</string>
+        <key>controller</key>
+        <string></string>
+    </dict>
 </array>
 </plist>
