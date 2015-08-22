@@ -11,6 +11,7 @@
 #import "JQTestViewController.h"
 #import "SlideBackMainController.h"
 #import "OpenAppURLMainController.h"
+#import "DrawingBoardMainController.h"
 
 
 @interface MainViewController ()
@@ -144,6 +145,10 @@
     } else if ([@"007" isEqualToString:code]) {
         
         [self.navigationController pushViewController:[OpenAppURLMainController new] animated:YES];
+        
+    } else if ([@"008" isEqualToString:code]) {
+        
+        [self.navigationController pushViewController:[DrawingBoardMainController new] animated:YES];
         
     }
     
