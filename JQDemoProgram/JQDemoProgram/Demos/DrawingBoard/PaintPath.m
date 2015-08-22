@@ -10,12 +10,12 @@
 
 @implementation PaintPath
 
-+ (instancetype) paintPathWitStartPoint:(CGPoint)startPoint andhWidth:(CGFloat)width andColor:(UIColor *)color{
++ (instancetype) paintPathWithWidth:(CGFloat)width andColor:(UIColor *)color{
     
-    PaintPath *path = [[PaintPath alloc] init];
+    PaintPath *path = [[self alloc] init];
     path.color = color;
-    path.width = width;
-    [path moveToPoint:startPoint];
+    path.lineWidth = width;
+//    [path moveToPoint:startPoint];
     
     return path;
 }

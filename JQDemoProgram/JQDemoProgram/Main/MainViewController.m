@@ -70,6 +70,7 @@
     
     // nav
     self.navigationItem.title = @"JQDemo";
+
     
     // tableview
 
@@ -80,6 +81,8 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    // 启用侧滑返回
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     
     // 旋转button
     self.feedbackButton.hidden = NO;

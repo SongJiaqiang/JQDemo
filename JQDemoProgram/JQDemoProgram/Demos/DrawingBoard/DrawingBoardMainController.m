@@ -8,6 +8,8 @@
 
 #import "DrawingBoardMainController.h"
 
+#import "PaintView.h"
+
 #import "MBProgressHUD+Ext.h"
 
 
@@ -23,7 +25,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *openButton;
 
 @property (weak, nonatomic) IBOutlet UIView *colorsView;
-@property (weak, nonatomic) IBOutlet UIView *paintView;
+@property (weak, nonatomic) IBOutlet PaintView *paintView;
+@property (weak, nonatomic) IBOutlet UISlider *sliderView;
 
 
 
@@ -33,6 +36,9 @@
 - (IBAction)eraseButtonClick;
 - (IBAction)saveButtonClick;
 - (IBAction)openButtonClick;
+
+- (IBAction)sliderDidChanged:(UISlider *)sender;
+
 
 
 @property (nonatomic, strong) NSMutableArray *colorList;
@@ -78,6 +84,9 @@
     
     [self setupColorsView];
     
+    
+    // 禁用侧滑返回
+    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
 }
 
 
@@ -91,16 +100,18 @@
 #pragma mark - listener
 
 - (IBAction)undoButtonClick{
-    
+    [self.paintView undo];
 }
 - (IBAction)redoButtonClick{
-    
+        [self.paintView redo];
 }
 - (IBAction)clearButtonClick{
-    
+        [self.paintView clearAll];
 }
 - (IBAction)eraseButtonClick{
     
+    self.paintView.color = [UIColor whiteColor];
+    self.sliderView.thumbTintColor = [UIColor whiteColor];
 }
 - (IBAction)saveButtonClick{
     
@@ -113,6 +124,12 @@
     
 }
 - (IBAction)openButtonClick{
+    
+}
+
+- (IBAction)sliderDidChanged:(UISlider *)sender {
+    
+    self.paintView.width = sender.value;
     
 }
 
@@ -194,11 +211,12 @@
 
 - (void)colorButtonClick:(UIButton *)button {
     
-    for (UIButton *btn in self.colorButtonList) {
-        btn.layer.borderWidth = 0;
-    }
+    // 设置选中边框
+    self.sliderView.thumbTintColor = button.backgroundColor;
     
-    button.layer.borderWidth = 4;
+    // 设置笔触颜色
+    self.paintView.color = button.backgroundColor;
+    
     
 }
 

@@ -25,6 +25,6 @@
  *
  *  @return PaintPath实例
  */
-+ (instancetype) paintPathWitStartPoint:(CGPoint)startPoint andhWidth:(CGFloat)width andColor:(UIColor *)color;
++ (instancetype) paintPathWithWidth:(CGFloat)width andColor:(UIColor *)color;
 
 @end
