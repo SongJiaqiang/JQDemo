@@ -363,6 +363,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = DBF24DBB1AF1CE1900B4DA8D;
 			productRefGroup = DBF24DC51AF1CE1900B4DA8D /* Products */;
@@ -588,6 +589,11 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JQDemoProgram/Main/PrefixHeader.pch";
 				INFOPLIST_FILE = JQDemoProgram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JQDemoProgram/Libs/UMengFeedback",
+					"$(PROJECT_DIR)/JQDemoProgram/Libs/UMengFeedback/UMOpus",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -602,6 +608,11 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JQDemoProgram/Main/PrefixHeader.pch";
 				INFOPLIST_FILE = JQDemoProgram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JQDemoProgram/Libs/UMengFeedback",
+					"$(PROJECT_DIR)/JQDemoProgram/Libs/UMengFeedback/UMOpus",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

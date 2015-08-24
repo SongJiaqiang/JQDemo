@@ -13,6 +13,7 @@
 #import "OpenAppURLMainController.h"
 #import "DrawingBoardMainController.h"
 
+#import "UMFeedback.h"
 
 @interface MainViewController ()
 
@@ -165,6 +166,7 @@
 -(void) feedbackButtonClick:(UIButton *)button{
     NSLog(@"进入用户反馈界面");
     
+    [self presentViewController:[UMFeedback feedbackModalViewController] animated:YES completion:nil];
     
 }
 

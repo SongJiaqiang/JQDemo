@@ -14,7 +14,7 @@
 #define JQMainButtonRotateDuration 3.0
 
 
-
+#define Key_Umeng @"55db378ae0f55a1d34002e50"
 
 
 
