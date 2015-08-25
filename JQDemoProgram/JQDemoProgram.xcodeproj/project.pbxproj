@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		8CE77F9E9B80E932231DB310 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04684D3D2C5500E02878FFC0 /* libPods.a */; };
 		DB223FE41B831D350028847D /* OpenAppURLMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB223FE31B831D350028847D /* OpenAppURLMainController.m */; };
+		DB29E5E51B8CA8D2006B35B3 /* SaveToAlbumMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB29E5E41B8CA8D2006B35B3 /* SaveToAlbumMainController.m */; };
+		DB29E5E91B8CA937006B35B3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB29E5E81B8CA937006B35B3 /* BaseViewController.m */; };
+		DB29E5EC1B8CA94F006B35B3 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB29E5EB1B8CA94F006B35B3 /* BaseTableViewController.m */; };
+		DB29E5EE1B8CAA11006B35B3 /* SaveToAlbumMainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB29E5ED1B8CAA11006B35B3 /* SaveToAlbumMainController.xib */; };
 		DB9349881B7F938D0086A490 /* SlideBackMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9349871B7F938D0086A490 /* SlideBackMainController.m */; };
 		DB9349911B7F94890086A490 /* A2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB93498A1B7F94890086A490 /* A2ViewController.m */; };
 		DB9349921B7F94890086A490 /* A3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB93498C1B7F94890086A490 /* A3ViewController.m */; };
@@ -50,6 +54,13 @@
 		D319D40B5C3D2736DF370D9B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DB223FE21B831D350028847D /* OpenAppURLMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenAppURLMainController.h; path = Demos/OpenAppURL/OpenAppURLMainController.h; sourceTree = "<group>"; };
 		DB223FE31B831D350028847D /* OpenAppURLMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenAppURLMainController.m; path = Demos/OpenAppURL/OpenAppURLMainController.m; sourceTree = "<group>"; };
+		DB29E5E31B8CA8D2006B35B3 /* SaveToAlbumMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SaveToAlbumMainController.h; path = Demos/SaveToAlbum/SaveToAlbumMainController.h; sourceTree = "<group>"; };
+		DB29E5E41B8CA8D2006B35B3 /* SaveToAlbumMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SaveToAlbumMainController.m; path = Demos/SaveToAlbum/SaveToAlbumMainController.m; sourceTree = "<group>"; };
+		DB29E5E71B8CA937006B35B3 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Common/BaseViewController.h; sourceTree = "<group>"; };
+		DB29E5E81B8CA937006B35B3 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Common/BaseViewController.m; sourceTree = "<group>"; };
+		DB29E5EA1B8CA94F006B35B3 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseTableViewController.h; path = Common/BaseTableViewController.h; sourceTree = "<group>"; };
+		DB29E5EB1B8CA94F006B35B3 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseTableViewController.m; path = Common/BaseTableViewController.m; sourceTree = "<group>"; };
+		DB29E5ED1B8CAA11006B35B3 /* SaveToAlbumMainController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SaveToAlbumMainController.xib; path = Demos/SaveToAlbum/SaveToAlbumMainController.xib; sourceTree = "<group>"; };
 		DB2DDABE1B023F8A008C03BE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		DB9349861B7F938D0086A490 /* SlideBackMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SlideBackMainController.h; path = Demos/SlideBack/SlideBackMainController.h; sourceTree = "<group>"; };
 		DB9349871B7F938D0086A490 /* SlideBackMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SlideBackMainController.m; path = Demos/SlideBack/SlideBackMainController.m; sourceTree = "<group>"; };
@@ -129,11 +140,22 @@
 			name = OpenAppURL;
 			sourceTree = "<group>";
 		};
+		DB29E5E61B8CA8F1006B35B3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DB29E5E71B8CA937006B35B3 /* BaseViewController.h */,
+				DB29E5E81B8CA937006B35B3 /* BaseViewController.m */,
+				DB29E5EA1B8CA94F006B35B3 /* BaseTableViewController.h */,
+				DB29E5EB1B8CA94F006B35B3 /* BaseTableViewController.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		DB9349841B7F93180086A490 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
 				DB99517B1B87577900703ACF /* DrawingBoard */,
-				DB99517A1B8756C900703ACF /* SaveImageToAlbum */,
+				DB99517A1B8756C900703ACF /* SaveToAlbum */,
 				DB223FE11B831B400028847D /* OpenAppURL */,
 				DB9349851B7F93260086A490 /* SlideBack */,
 			);
@@ -159,11 +181,14 @@
 			name = SlideBack;
 			sourceTree = "<group>";
 		};
-		DB99517A1B8756C900703ACF /* SaveImageToAlbum */ = {
+		DB99517A1B8756C900703ACF /* SaveToAlbum */ = {
 			isa = PBXGroup;
 			children = (
+				DB29E5E31B8CA8D2006B35B3 /* SaveToAlbumMainController.h */,
+				DB29E5E41B8CA8D2006B35B3 /* SaveToAlbumMainController.m */,
+				DB29E5ED1B8CAA11006B35B3 /* SaveToAlbumMainController.xib */,
 			);
-			name = SaveImageToAlbum;
+			name = SaveToAlbum;
 			sourceTree = "<group>";
 		};
 		DB99517B1B87577900703ACF /* DrawingBoard */ = {
@@ -261,6 +286,7 @@
 		DBF24DEF1AF1F09200B4DA8D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				DB29E5E61B8CA8F1006B35B3 /* Common */,
 				DBF24DF01AF1F09200B4DA8D /* AppDelegate.h */,
 				DBF24DF11AF1F09200B4DA8D /* AppDelegate.m */,
 				DBF24DF21AF1F09200B4DA8D /* MainViewController.h */,
@@ -385,6 +411,7 @@
 				DBCED8D51B888B3900C9885B /* MBProgressHUD.bundle in Resources */,
 				DBC712891B046AD700A690C5 /* JQTestViewController.xib in Resources */,
 				DBF24DFD1AF1F09200B4DA8D /* Images.xcassets in Resources */,
+				DB29E5EE1B8CAA11006B35B3 /* SaveToAlbumMainController.xib in Resources */,
 				DBF24DD81AF1CE1900B4DA8D /* LaunchScreen.xib in Resources */,
 				DBF24E081AF1F1CB00B4DA8D /* Info.plist in Resources */,
 				DBF24DFC1AF1F09200B4DA8D /* demoList.plist in Resources */,
@@ -441,12 +468,15 @@
 			files = (
 				DBCED8C91B8877AC00C9885B /* PaintView.m in Sources */,
 				DBCED8C51B8827DB00C9885B /* DrawingBoardMainController.m in Sources */,
+				DB29E5E51B8CA8D2006B35B3 /* SaveToAlbumMainController.m in Sources */,
 				DBF24DFA1AF1F09200B4DA8D /* AppDelegate.m in Sources */,
 				DBF24E091AF1F1CB00B4DA8D /* main.m in Sources */,
 				DBCED8D31B8889C800C9885B /* MBProgressHUD+Ext.m in Sources */,
 				DB93499A1B7F9D050086A490 /* SlideBackNavigationController.m in Sources */,
+				DB29E5E91B8CA937006B35B3 /* BaseViewController.m in Sources */,
 				DBCED8CF1B8881A300C9885B /* PaintPath.m in Sources */,
 				DB223FE41B831D350028847D /* OpenAppURLMainController.m in Sources */,
+				DB29E5EC1B8CA94F006B35B3 /* BaseTableViewController.m in Sources */,
 				DB9349881B7F938D0086A490 /* SlideBackMainController.m in Sources */,
 				DBF24DFB1AF1F09200B4DA8D /* MainViewController.m in Sources */,
 				DB9349931B7F94890086A490 /* AViewController.m in Sources */,

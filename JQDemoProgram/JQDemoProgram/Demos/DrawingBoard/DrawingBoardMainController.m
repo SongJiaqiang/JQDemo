@@ -10,8 +10,6 @@
 
 #import "PaintView.h"
 
-#import "MBProgressHUD+Ext.h"
-
 
 @interface DrawingBoardMainController ()
 

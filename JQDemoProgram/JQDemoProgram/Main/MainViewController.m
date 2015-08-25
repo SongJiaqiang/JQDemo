@@ -12,6 +12,8 @@
 #import "SlideBackMainController.h"
 #import "OpenAppURLMainController.h"
 #import "DrawingBoardMainController.h"
+#import "SaveToAlbumMainController.h"
+
 
 #import "UMFeedback.h"
 
@@ -153,6 +155,10 @@
     } else if ([@"008" isEqualToString:code]) {
         
         [self.navigationController pushViewController:[DrawingBoardMainController new] animated:YES];
+        
+    } else if ([@"009" isEqualToString:code]) {
+        
+        [self.navigationController pushViewController:[SaveToAlbumMainController new] animated:YES];
         
     }
     
