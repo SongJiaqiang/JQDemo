@@ -27,6 +27,8 @@
 		DBCED8CF1B8881A300C9885B /* PaintPath.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCED8CE1B8881A300C9885B /* PaintPath.m */; };
 		DBCED8D31B8889C800C9885B /* MBProgressHUD+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCED8D21B8889C800C9885B /* MBProgressHUD+Ext.m */; };
 		DBCED8D51B888B3900C9885B /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DBCED8D41B888B3900C9885B /* MBProgressHUD.bundle */; };
+		DBED16501B8CD70C00A25D50 /* RoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DBED164F1B8CD70C00A25D50 /* RoundButton.m */; };
+		DBED16531B8CD73100A25D50 /* RoundButtonMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBED16521B8CD73100A25D50 /* RoundButtonMainController.m */; };
 		DBF24DD31AF1CE1900B4DA8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF24DD11AF1CE1900B4DA8D /* Main.storyboard */; };
 		DBF24DD81AF1CE1900B4DA8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBF24DD61AF1CE1900B4DA8D /* LaunchScreen.xib */; };
 		DBF24DE41AF1CE1900B4DA8D /* JQDemoProgramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF24DE31AF1CE1900B4DA8D /* JQDemoProgramTests.m */; };
@@ -87,6 +89,10 @@
 		DBCED8D11B8889C800C9885B /* MBProgressHUD+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MBProgressHUD+Ext.h"; path = "Category/MBProgressHUD+Ext.h"; sourceTree = "<group>"; };
 		DBCED8D21B8889C800C9885B /* MBProgressHUD+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MBProgressHUD+Ext.m"; path = "Category/MBProgressHUD+Ext.m"; sourceTree = "<group>"; };
 		DBCED8D41B888B3900C9885B /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MBProgressHUD.bundle; path = Category/MBProgressHUD.bundle; sourceTree = "<group>"; };
+		DBED164E1B8CD70C00A25D50 /* RoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoundButton.h; path = Demos/RoundButton/RoundButton.h; sourceTree = "<group>"; };
+		DBED164F1B8CD70C00A25D50 /* RoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoundButton.m; path = Demos/RoundButton/RoundButton.m; sourceTree = "<group>"; };
+		DBED16511B8CD73100A25D50 /* RoundButtonMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoundButtonMainController.h; path = Demos/RoundButton/RoundButtonMainController.h; sourceTree = "<group>"; };
+		DBED16521B8CD73100A25D50 /* RoundButtonMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoundButtonMainController.m; path = Demos/RoundButton/RoundButtonMainController.m; sourceTree = "<group>"; };
 		DBF24DC41AF1CE1900B4DA8D /* JQDemoProgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JQDemoProgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF24DD21AF1CE1900B4DA8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBF24DD71AF1CE1900B4DA8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -154,6 +160,7 @@
 		DB9349841B7F93180086A490 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				DBED164C1B8CD4AF00A25D50 /* RoundButton */,
 				DB99517B1B87577900703ACF /* DrawingBoard */,
 				DB99517A1B8756C900703ACF /* SaveToAlbum */,
 				DB223FE11B831B400028847D /* OpenAppURL */,
@@ -230,6 +237,17 @@
 				DBCED8D41B888B3900C9885B /* MBProgressHUD.bundle */,
 			);
 			name = Category;
+			sourceTree = "<group>";
+		};
+		DBED164C1B8CD4AF00A25D50 /* RoundButton */ = {
+			isa = PBXGroup;
+			children = (
+				DBED164E1B8CD70C00A25D50 /* RoundButton.h */,
+				DBED164F1B8CD70C00A25D50 /* RoundButton.m */,
+				DBED16511B8CD73100A25D50 /* RoundButtonMainController.h */,
+				DBED16521B8CD73100A25D50 /* RoundButtonMainController.m */,
+			);
+			name = RoundButton;
 			sourceTree = "<group>";
 		};
 		DBF24DBB1AF1CE1900B4DA8D = {
@@ -475,6 +493,7 @@
 				DB93499A1B7F9D050086A490 /* SlideBackNavigationController.m in Sources */,
 				DB29E5E91B8CA937006B35B3 /* BaseViewController.m in Sources */,
 				DBCED8CF1B8881A300C9885B /* PaintPath.m in Sources */,
+				DBED16501B8CD70C00A25D50 /* RoundButton.m in Sources */,
 				DB223FE41B831D350028847D /* OpenAppURLMainController.m in Sources */,
 				DB29E5EC1B8CA94F006B35B3 /* BaseTableViewController.m in Sources */,
 				DB9349881B7F938D0086A490 /* SlideBackMainController.m in Sources */,
@@ -484,6 +503,7 @@
 				DB9349941B7F948A0086A490 /* BViewController.m in Sources */,
 				DBC712881B046AD700A690C5 /* JQTestViewController.m in Sources */,
 				DB9349911B7F94890086A490 /* A2ViewController.m in Sources */,
+				DBED16531B8CD73100A25D50 /* RoundButtonMainController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

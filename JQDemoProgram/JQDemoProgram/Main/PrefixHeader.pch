@@ -26,6 +26,21 @@
 
 
 
+// values
+#define DefaultWindowWidth [UIApplication sharedApplication].keyWindow.bounds.size.width
+#define DefaultWindowHeight [UIApplication sharedApplication].keyWindow.bounds.size.height
+
+
+
+// colors
+#define ColorHexAlpha(r,g,b,a) [UIColor colorWithRed:r/256.0 green:g/256.0 blue:b/256.0 alpha:a/256.0]
+#define ColorHex(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:255/255.0]
+#define ColorWhisperPurple ColorHex(119,47,255)
+#define ColorWhisperGray ColorHex(235,235,235)
+
+
+
+
 
 
 #endif

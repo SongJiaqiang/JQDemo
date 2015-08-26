@@ -13,7 +13,7 @@
 #import "OpenAppURLMainController.h"
 #import "DrawingBoardMainController.h"
 #import "SaveToAlbumMainController.h"
-
+#import "RoundButtonMainController.h"
 
 #import "UMFeedback.h"
 
@@ -159,6 +159,10 @@
     } else if ([@"009" isEqualToString:code]) {
         
         [self.navigationController pushViewController:[SaveToAlbumMainController new] animated:YES];
+        
+    } else if ([@"010" isEqualToString:code]) {
+        
+        [self.navigationController pushViewController:[RoundButtonMainController new] animated:YES];
         
     }
     

@@ -22,7 +22,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // backgroundcolor
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     // nav
+    
     
     // 添加点击手势
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureHandler:)];
