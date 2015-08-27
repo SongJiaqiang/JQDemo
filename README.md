@@ -9,3 +9,6 @@ Just some simple demo for iOS coder
 * 日期选择工具
 * 006 界面滑动返回
 * 007 app跳转
+* 008 画板、涂鸦板
+* 009 保存到相册
+* 010 圆角按钮
