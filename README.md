@@ -1,5 +1,5 @@
 # JQDemo
-Just some simple demo for iOS coder
+Just some simple demos for iOS coder
 
 ## 选择器
 * 图片选择控制器
