@@ -20,12 +20,12 @@
 
 @implementation MeowButton
 
-- (void)drawRect:(CGRect)rect {
-    
-    
-    
-    
-}
+//- (void)drawRect:(CGRect)rect {
+//    
+//    
+//    
+//    
+//}
 
 - (UIImage *)whisper_replyTagIconWithSize:(CGSize)size text:(NSString *)text textAttr:(NSDictionary *)textAttr bgColor:(UIColor *)bgColor offset:(CGFloat)offset radius:(CGFloat)radius mode:(CGPathDrawingMode)mode{
     //    CGFloat offset = 10;

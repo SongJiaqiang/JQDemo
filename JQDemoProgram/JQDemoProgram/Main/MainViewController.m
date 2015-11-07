@@ -14,8 +14,12 @@
 #import "DrawingBoardMainController.h"
 #import "SaveToAlbumMainController.h"
 #import "RoundButtonMainController.h"
+#import "TableViewTestController.h"
 
 #import "UMFeedback.h"
+
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
 
 @interface MainViewController ()
 
@@ -29,6 +33,7 @@
  */
 @property (nonatomic, weak) UIButton *feedbackButton;
 
+@property (nonatomic, weak) UITextField *controllerNameField;
 
 
 @end
@@ -73,10 +78,11 @@
     
     // nav
     self.navigationItem.title = @"JQDemo";
-
+    
     
     // tableview
-
+    self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
+    [self setupSearchBar];
     
     // feedback
     [self.feedbackButton addTarget:self action:@selector(feedbackButtonClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -96,6 +102,40 @@
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     self.feedbackButton.hidden = YES;
+}
+
+#pragma mark setup
+- (void)setupSearchBar{
+    
+    UIColor *textColor = [UIColor colorWithRed:0.3 green:0.3 blue:0.3 alpha:1];
+    
+    UIView *view = [UIView new];
+    view.frame = CGRectMake(0, 0, kScreenWidth, 40);
+    view.backgroundColor = [UIColor colorWithRed:0.98 green:0.98 blue:0.98 alpha:1];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [view addSubview:button];
+    button.frame = CGRectMake(kScreenWidth-10-60, 5, 60, 30);
+    button.backgroundColor= [UIColor clearColor];
+    [self roundCornerView:button];
+    [button setTitle:@"GO" forState:UIControlStateNormal];
+    [button setTitleColor:textColor forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont systemFontOfSize:14];
+    [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+    
+    UITextField *field = [UITextField new];
+    [view addSubview:field];
+    _controllerNameField = field;
+    field.frame = CGRectMake(10, 5, kScreenWidth-10-10-button.frame.size.width-10, 30);
+    [self roundCornerView:field];
+    field.font = [UIFont systemFontOfSize:14];
+    field.textColor = textColor;
+    field.placeholder = @"Controller class name";
+    field.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 30)];
+    field.leftViewMode = UITextFieldViewModeAlways;
+    
+    
+    self.tableView.tableHeaderView = view;
 }
 
 
@@ -136,13 +176,14 @@
         return;
     }
     
-    
-    if ([@"001" isEqualToString:code]) {
+    if ([@"000" isEqualToString:code]) {
+        [self.navigationController pushViewController:[TableViewTestController new] animated:YES];
+    }else if ([@"001" isEqualToString:code]) {
         [self.navigationController pushViewController:[JQTestViewController new] animated:YES];
         
     } else if ([@"002" isEqualToString:code]) {
         
-        
+
         
     } else if ([@"006" isEqualToString:code]) {
         
@@ -180,6 +221,18 @@
     
 }
 
+- (void)buttonClick:(UIButton*)button{
+    
+    NSString *controllerName = self.controllerNameField.text;
+    if (controllerName == nil || controllerName.length == 0) {
+        return;
+    }
+    
+    Class controller = NSClassFromString(controllerName);
+    [self.navigationController pushViewController:[controller new] animated:YES];
+    
+}
+
 
 #pragma mark - 其他方法
 
@@ -201,5 +254,14 @@
     
     
 }
+
+- (void)roundCornerView:(UIView *)view{
+    view.clipsToBounds = YES;
+    view.layer.masksToBounds = YES;
+    view.layer.cornerRadius = 5;
+    view.layer.borderWidth = 1;
+    view.layer.borderColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1].CGColor;
+}
+
 
 @end

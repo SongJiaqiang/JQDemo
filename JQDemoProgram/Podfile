@@ -8,6 +8,8 @@ pod 'MBProgressHUD', '~> 0.9.1'
 
 # UMeng组件
 pod 'UMengFeedback', '~> 2.3.4'
+# 具有底层按钮的tableviewcell
+pod 'SWTableViewCell', '~> 0.3.7'
 
 
 
