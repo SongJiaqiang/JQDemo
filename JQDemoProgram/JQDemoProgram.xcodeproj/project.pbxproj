@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8CE77F9E9B80E932231DB310 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04684D3D2C5500E02878FFC0 /* libPods.a */; };
+		90032D0C1BEF04E700F41ED3 /* UIImage+CustomImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 90032D0B1BEF04E700F41ED3 /* UIImage+CustomImage.m */; };
 		90032D101BEF130C00F41ED3 /* Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 90032D0F1BEF130C00F41ED3 /* Demo.m */; };
 		903C7FBD1BAADA54004AA3C2 /* MeowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 903C7FBC1BAADA54004AA3C2 /* MeowButton.m */; };
 		9097F11F1BEE61DA00C5533E /* MeowButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9097F11E1BEE61DA00C5533E /* MeowButtonViewController.m */; };
@@ -59,6 +60,8 @@
 /* Begin PBXFileReference section */
 		04684D3D2C5500E02878FFC0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7651C455C3354E5817B8A7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		90032D0A1BEF04E700F41ED3 /* UIImage+CustomImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+CustomImage.h"; path = "Category/UIImage+CustomImage.h"; sourceTree = "<group>"; };
+		90032D0B1BEF04E700F41ED3 /* UIImage+CustomImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CustomImage.m"; path = "Category/UIImage+CustomImage.m"; sourceTree = "<group>"; };
 		90032D0E1BEF130C00F41ED3 /* Demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Demo.h; path = Models/Demo.h; sourceTree = "<group>"; };
 		90032D0F1BEF130C00F41ED3 /* Demo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Demo.m; path = Models/Demo.m; sourceTree = "<group>"; };
 		903C7FBB1BAADA54004AA3C2 /* MeowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeowButton.h; sourceTree = "<group>"; };
@@ -293,6 +296,8 @@
 				DBCED8D11B8889C800C9885B /* MBProgressHUD+Ext.h */,
 				DBCED8D21B8889C800C9885B /* MBProgressHUD+Ext.m */,
 				DBCED8D41B888B3900C9885B /* MBProgressHUD.bundle */,
+				90032D0A1BEF04E700F41ED3 /* UIImage+CustomImage.h */,
+				90032D0B1BEF04E700F41ED3 /* UIImage+CustomImage.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -569,6 +574,7 @@
 				DBC712881B046AD700A690C5 /* JQTestViewController.m in Sources */,
 				DB9349911B7F94890086A490 /* A2ViewController.m in Sources */,
 				903C7FBD1BAADA54004AA3C2 /* MeowButton.m in Sources */,
+				90032D0C1BEF04E700F41ED3 /* UIImage+CustomImage.m in Sources */,
 				DBED16531B8CD73100A25D50 /* RoundButtonMainController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

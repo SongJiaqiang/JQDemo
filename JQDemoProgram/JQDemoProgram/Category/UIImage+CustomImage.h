@@ -10,4 +10,10 @@
 
 @interface UIImage (CustomImage)
 
+
+/** 倾斜圆角矩形 */
+- (UIImage *)meowImageWithSize:(CGSize)size text:(NSString *)text textAttr:(NSDictionary *)textAttr bgColor:(UIColor *)bgColor offset:(CGFloat)offset radius:(CGFloat)radius mode:(CGPathDrawingMode)mode;
+
+
+
 @end
