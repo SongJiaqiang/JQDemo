@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8CE77F9E9B80E932231DB310 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04684D3D2C5500E02878FFC0 /* libPods.a */; };
+		90032D101BEF130C00F41ED3 /* Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 90032D0F1BEF130C00F41ED3 /* Demo.m */; };
 		903C7FBD1BAADA54004AA3C2 /* MeowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 903C7FBC1BAADA54004AA3C2 /* MeowButton.m */; };
 		9097F11F1BEE61DA00C5533E /* MeowButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9097F11E1BEE61DA00C5533E /* MeowButtonViewController.m */; };
 		90FA3C4D1BEA0526003ABE02 /* TableViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FA3C4C1BEA0526003ABE02 /* TableViewTestController.m */; };
@@ -58,6 +59,8 @@
 /* Begin PBXFileReference section */
 		04684D3D2C5500E02878FFC0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7651C455C3354E5817B8A7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		90032D0E1BEF130C00F41ED3 /* Demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Demo.h; path = Models/Demo.h; sourceTree = "<group>"; };
+		90032D0F1BEF130C00F41ED3 /* Demo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Demo.m; path = Models/Demo.m; sourceTree = "<group>"; };
 		903C7FBB1BAADA54004AA3C2 /* MeowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeowButton.h; sourceTree = "<group>"; };
 		903C7FBC1BAADA54004AA3C2 /* MeowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeowButton.m; sourceTree = "<group>"; };
 		9097F11D1BEE61DA00C5533E /* MeowButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeowButtonViewController.h; path = Controllers/MeowButtonViewController.h; sourceTree = "<group>"; };
@@ -142,6 +145,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90032D0D1BEF12DE00F41ED3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				90032D0E1BEF130C00F41ED3 /* Demo.h */,
+				90032D0F1BEF130C00F41ED3 /* Demo.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		9097F11B1BEE61AD00C5533E /* MeowButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +363,7 @@
 		DBF24DEF1AF1F09200B4DA8D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				90032D0D1BEF12DE00F41ED3 /* Models */,
 				DB29E5E61B8CA8F1006B35B3 /* Common */,
 				DBF24DF01AF1F09200B4DA8D /* AppDelegate.h */,
 				DBF24DF11AF1F09200B4DA8D /* AppDelegate.m */,
@@ -532,6 +545,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90032D101BEF130C00F41ED3 /* Demo.m in Sources */,
 				9097F11F1BEE61DA00C5533E /* MeowButtonViewController.m in Sources */,
 				DBCED8C91B8877AC00C9885B /* PaintView.m in Sources */,
 				DBCED8C51B8827DB00C9885B /* DrawingBoardMainController.m in Sources */,

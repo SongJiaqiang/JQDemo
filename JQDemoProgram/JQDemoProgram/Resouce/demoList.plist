@@ -70,7 +70,7 @@
 		<key>desc</key>
 		<string>全局滑动返回</string>
 		<key>controller</key>
-		<string></string>
+		<string>SlideBackMainController</string>
 	</dict>
 	<dict>
 		<key>code</key>
@@ -80,7 +80,7 @@
 		<key>desc</key>
 		<string>跳转到其它app</string>
 		<key>controller</key>
-		<string></string>
+		<string>OpenAppURLMainController</string>
 	</dict>
 	<dict>
 		<key>code</key>
@@ -90,7 +90,7 @@
 		<key>desc</key>
 		<string>画布、画板、涂鸦</string>
 		<key>controller</key>
-		<string></string>
+		<string>DrawingBoardMainController</string>
 	</dict>
 	<dict>
 		<key>code</key>
@@ -100,7 +100,7 @@
 		<key>desc</key>
 		<string>保存图片、视频到相册</string>
 		<key>controller</key>
-		<string></string>
+		<string>SaveToAlbumMainController</string>
 	</dict>
 	<dict>
 		<key>code</key>
@@ -110,7 +110,17 @@
 		<key>desc</key>
 		<string>各种类型的圆角按钮</string>
 		<key>controller</key>
-		<string></string>
+		<string>RoundButtonMainController</string>
+	</dict>
+	<dict>
+		<key>code</key>
+		<string>010</string>
+		<key>name</key>
+		<string>MeowButton</string>
+		<key>desc</key>
+		<string>倾斜圆角矩形</string>
+		<key>controller</key>
+		<string>MeowButtonViewController</string>
 	</dict>
 </array>
 </plist>

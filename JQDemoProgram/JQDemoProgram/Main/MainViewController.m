@@ -17,6 +17,7 @@
 #import "TableViewTestController.h"
 
 #import "UMFeedback.h"
+#import "Demo.h"
 
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
@@ -168,44 +169,17 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
     NSDictionary *demoInfo = self.demoList[indexPath.row];
+    Demo *demo = [Demo demoWithDictionary:demoInfo];
     
-
-    NSString *code = demoInfo[@"code"];
-    if (code == nil) {
-        NSLog(@"code错误，请检查demo列表中的code格式是否正确。");
-        return;
+    if (demo.controller) {
+        
+        Class className = NSClassFromString(demo.controller);
+        [self.navigationController pushViewController:[className new] animated:YES];
+        
+    }else {
+        NSLog(@"error! controller does't exit.");
     }
-    
-    if ([@"000" isEqualToString:code]) {
-        [self.navigationController pushViewController:[TableViewTestController new] animated:YES];
-    }else if ([@"001" isEqualToString:code]) {
-        [self.navigationController pushViewController:[JQTestViewController new] animated:YES];
-        
-    } else if ([@"002" isEqualToString:code]) {
-        
 
-        
-    } else if ([@"006" isEqualToString:code]) {
-        
-        [self.navigationController pushViewController:[SlideBackMainController new] animated:YES];
-        
-    } else if ([@"007" isEqualToString:code]) {
-        
-        [self.navigationController pushViewController:[OpenAppURLMainController new] animated:YES];
-        
-    } else if ([@"008" isEqualToString:code]) {
-        
-        [self.navigationController pushViewController:[DrawingBoardMainController new] animated:YES];
-        
-    } else if ([@"009" isEqualToString:code]) {
-        
-        [self.navigationController pushViewController:[SaveToAlbumMainController new] animated:YES];
-        
-    } else if ([@"010" isEqualToString:code]) {
-        
-        [self.navigationController pushViewController:[RoundButtonMainController new] animated:YES];
-        
-    }
     
 }
 
