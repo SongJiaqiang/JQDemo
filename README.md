@@ -11,6 +11,7 @@ Just some simple demos for iOS coder
 * 007 app跳转
 * 008 画板、涂鸦板
 ![涂鸦板](https://raw.githubusercontent.com/SongJiaqiang/JQDemo/master/images/01.png)
+<img alt="画板" src="https://raw.githubusercontent.com/SongJiaqiang/JQDemo/master/images/01.png" width="200px">
 * 009 保存到相册
 * 010 圆角按钮
 * 
