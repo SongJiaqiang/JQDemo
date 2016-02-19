@@ -25,6 +25,7 @@ PODS:
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
   - SWTableViewCell (0.3.7)
+  - UMengAnalytics (3.6.6)
   - UMengFeedback (2.3.4)
 
 DEPENDENCIES:
@@ -32,6 +33,7 @@ DEPENDENCIES:
   - MBProgressHUD (~> 0.9.1)
   - SDWebImage (~> 3.7)
   - SWTableViewCell (~> 0.3.7)
+  - UMengAnalytics
   - UMengFeedback (~> 2.3.4)
 
 SPEC CHECKSUMS:
@@ -39,6 +41,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
+  UMengAnalytics: 4bf831415146b9c57cb10be65fbd43462ef8cf65
   UMengFeedback: 5283cc0e324dffca4dd54c4abb3cbded56487817
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

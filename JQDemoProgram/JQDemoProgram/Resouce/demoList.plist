@@ -122,5 +122,15 @@
 		<key>controller</key>
 		<string>MeowButtonViewController</string>
 	</dict>
+	<dict>
+		<key>code</key>
+		<string>010</string>
+		<key>name</key>
+		<string>GallerySelectionView</string>
+		<key>desc</key>
+		<string>画廊风格图片选择器</string>
+		<key>controller</key>
+		<string>GalleryImagePickerController</string>
+	</dict>
 </array>
 </plist>

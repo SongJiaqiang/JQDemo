@@ -11,7 +11,9 @@
 		90032D0C1BEF04E700F41ED3 /* UIImage+CustomImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 90032D0B1BEF04E700F41ED3 /* UIImage+CustomImage.m */; };
 		90032D101BEF130C00F41ED3 /* Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 90032D0F1BEF130C00F41ED3 /* Demo.m */; };
 		903C7FBD1BAADA54004AA3C2 /* MeowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 903C7FBC1BAADA54004AA3C2 /* MeowButton.m */; };
+		905A48E11C71DC2600F5E892 /* GalleryImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905A48E01C71DC2600F5E892 /* GalleryImagePickerController.m */; };
 		9097F11F1BEE61DA00C5533E /* MeowButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9097F11E1BEE61DA00C5533E /* MeowButtonViewController.m */; };
+		90AC197B1C757E0200093260 /* GalleryImagePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AC197A1C757E0200093260 /* GalleryImagePickerView.m */; };
 		90FA3C4D1BEA0526003ABE02 /* TableViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FA3C4C1BEA0526003ABE02 /* TableViewTestController.m */; };
 		90FA3C511BEA0623003ABE02 /* TableViewTest1Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FA3C4F1BEA0623003ABE02 /* TableViewTest1Cell.m */; };
 		90FA3C521BEA0623003ABE02 /* TableViewTest1Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90FA3C501BEA0623003ABE02 /* TableViewTest1Cell.xib */; };
@@ -66,8 +68,12 @@
 		90032D0F1BEF130C00F41ED3 /* Demo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Demo.m; path = Models/Demo.m; sourceTree = "<group>"; };
 		903C7FBB1BAADA54004AA3C2 /* MeowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeowButton.h; sourceTree = "<group>"; };
 		903C7FBC1BAADA54004AA3C2 /* MeowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeowButton.m; sourceTree = "<group>"; };
+		905A48DF1C71DC2600F5E892 /* GalleryImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GalleryImagePickerController.h; path = Demos/GalleryImagePicker/GalleryImagePickerController.h; sourceTree = "<group>"; };
+		905A48E01C71DC2600F5E892 /* GalleryImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GalleryImagePickerController.m; path = Demos/GalleryImagePicker/GalleryImagePickerController.m; sourceTree = "<group>"; };
 		9097F11D1BEE61DA00C5533E /* MeowButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeowButtonViewController.h; path = Controllers/MeowButtonViewController.h; sourceTree = "<group>"; };
 		9097F11E1BEE61DA00C5533E /* MeowButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeowButtonViewController.m; path = Controllers/MeowButtonViewController.m; sourceTree = "<group>"; };
+		90AC19791C757E0200093260 /* GalleryImagePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GalleryImagePickerView.h; path = Demos/GalleryImagePicker/GalleryImagePickerView.h; sourceTree = "<group>"; };
+		90AC197A1C757E0200093260 /* GalleryImagePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GalleryImagePickerView.m; path = Demos/GalleryImagePicker/GalleryImagePickerView.m; sourceTree = "<group>"; };
 		90FA3C4B1BEA0526003ABE02 /* TableViewTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewTestController.h; path = Demos/TableView/Test1/TableViewTestController.h; sourceTree = "<group>"; };
 		90FA3C4C1BEA0526003ABE02 /* TableViewTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewTestController.m; path = Demos/TableView/Test1/TableViewTestController.m; sourceTree = "<group>"; };
 		90FA3C4E1BEA0623003ABE02 /* TableViewTest1Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewTest1Cell.h; path = Demos/TableView/Test1/TableViewTest1Cell.h; sourceTree = "<group>"; };
@@ -157,6 +163,17 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		905A48DE1C71DB6B00F5E892 /* GalleryImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				905A48DF1C71DC2600F5E892 /* GalleryImagePickerController.h */,
+				905A48E01C71DC2600F5E892 /* GalleryImagePickerController.m */,
+				90AC19791C757E0200093260 /* GalleryImagePickerView.h */,
+				90AC197A1C757E0200093260 /* GalleryImagePickerView.m */,
+			);
+			name = GalleryImagePicker;
+			sourceTree = "<group>";
+		};
 		9097F11B1BEE61AD00C5533E /* MeowButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +235,7 @@
 		DB9349841B7F93180086A490 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				905A48DE1C71DB6B00F5E892 /* GalleryImagePicker */,
 				90FA3C491BEA04B1003ABE02 /* TableView */,
 				DBED164C1B8CD4AF00A25D50 /* RoundButton */,
 				DB99517B1B87577900703ACF /* DrawingBoard */,
@@ -419,6 +437,7 @@
 				DBF24DC11AF1CE1900B4DA8D /* Frameworks */,
 				DBF24DC21AF1CE1900B4DA8D /* Resources */,
 				8FF4693EC60BDB783E511915 /* Copy Pods Resources */,
+				57AF0F4736092B744C7B331D /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -513,6 +532,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		57AF0F4736092B744C7B331D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8FF4693EC60BDB783E511915 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -569,12 +603,14 @@
 				90FA3C4D1BEA0526003ABE02 /* TableViewTestController.m in Sources */,
 				DBF24DFB1AF1F09200B4DA8D /* MainViewController.m in Sources */,
 				DB9349931B7F94890086A490 /* AViewController.m in Sources */,
+				90AC197B1C757E0200093260 /* GalleryImagePickerView.m in Sources */,
 				DB9349921B7F94890086A490 /* A3ViewController.m in Sources */,
 				DB9349941B7F948A0086A490 /* BViewController.m in Sources */,
 				DBC712881B046AD700A690C5 /* JQTestViewController.m in Sources */,
 				DB9349911B7F94890086A490 /* A2ViewController.m in Sources */,
 				903C7FBD1BAADA54004AA3C2 /* MeowButton.m in Sources */,
 				90032D0C1BEF04E700F41ED3 /* UIImage+CustomImage.m in Sources */,
+				905A48E11C71DC2600F5E892 /* GalleryImagePickerController.m in Sources */,
 				DBED16531B8CD73100A25D50 /* RoundButtonMainController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
