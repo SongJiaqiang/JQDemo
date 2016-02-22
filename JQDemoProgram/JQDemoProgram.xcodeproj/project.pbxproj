@@ -10,8 +10,15 @@
 		8CE77F9E9B80E932231DB310 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04684D3D2C5500E02878FFC0 /* libPods.a */; };
 		90032D0C1BEF04E700F41ED3 /* UIImage+CustomImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 90032D0B1BEF04E700F41ED3 /* UIImage+CustomImage.m */; };
 		90032D101BEF130C00F41ED3 /* Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 90032D0F1BEF130C00F41ED3 /* Demo.m */; };
+		9005976D1C7AD3C5001C31FA /* GalleryImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9005976A1C7AD3C5001C31FA /* GalleryImagePickerController.m */; };
+		9005976E1C7AD3C5001C31FA /* GalleryImagePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9005976C1C7AD3C5001C31FA /* GalleryImagePickerView.m */; };
 		903C7FBD1BAADA54004AA3C2 /* MeowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 903C7FBC1BAADA54004AA3C2 /* MeowButton.m */; };
+		905933E11BFC569E00F558C6 /* GradientTriangleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905933E01BFC569E00F558C6 /* GradientTriangleController.m */; };
+		905933E41BFC5F5400F558C6 /* GradientTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 905933E31BFC5F5400F558C6 /* GradientTriangleView.m */; };
+		905933E71BFC620A00F558C6 /* GradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 905933E61BFC620A00F558C6 /* GradientLayer.m */; };
 		9097F11F1BEE61DA00C5533E /* MeowButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9097F11E1BEE61DA00C5533E /* MeowButtonViewController.m */; };
+		90ED03321BF08E510020933E /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED03311BF08E510020933E /* ContactViewController.m */; };
+		90ED03391BF094C60020933E /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED03381BF094C60020933E /* UIView+AutoLayout.m */; };
 		90FA3C4D1BEA0526003ABE02 /* TableViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FA3C4C1BEA0526003ABE02 /* TableViewTestController.m */; };
 		90FA3C511BEA0623003ABE02 /* TableViewTest1Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FA3C4F1BEA0623003ABE02 /* TableViewTest1Cell.m */; };
 		90FA3C521BEA0623003ABE02 /* TableViewTest1Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90FA3C501BEA0623003ABE02 /* TableViewTest1Cell.xib */; };
@@ -64,10 +71,27 @@
 		90032D0B1BEF04E700F41ED3 /* UIImage+CustomImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CustomImage.m"; path = "Category/UIImage+CustomImage.m"; sourceTree = "<group>"; };
 		90032D0E1BEF130C00F41ED3 /* Demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Demo.h; path = Models/Demo.h; sourceTree = "<group>"; };
 		90032D0F1BEF130C00F41ED3 /* Demo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Demo.m; path = Models/Demo.m; sourceTree = "<group>"; };
+		900597691C7AD3C5001C31FA /* GalleryImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryImagePickerController.h; sourceTree = "<group>"; };
+		9005976A1C7AD3C5001C31FA /* GalleryImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryImagePickerController.m; sourceTree = "<group>"; };
+		9005976B1C7AD3C5001C31FA /* GalleryImagePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryImagePickerView.h; sourceTree = "<group>"; };
+		9005976C1C7AD3C5001C31FA /* GalleryImagePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryImagePickerView.m; sourceTree = "<group>"; };
 		903C7FBB1BAADA54004AA3C2 /* MeowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeowButton.h; sourceTree = "<group>"; };
 		903C7FBC1BAADA54004AA3C2 /* MeowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeowButton.m; sourceTree = "<group>"; };
+		905933DF1BFC569E00F558C6 /* GradientTriangleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientTriangleController.h; path = Demos/Gradient/GradientTriangleController.h; sourceTree = "<group>"; };
+		905933E01BFC569E00F558C6 /* GradientTriangleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientTriangleController.m; path = Demos/Gradient/GradientTriangleController.m; sourceTree = "<group>"; };
+		905933E21BFC5F5400F558C6 /* GradientTriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientTriangleView.h; path = Demos/Gradient/GradientTriangleView.h; sourceTree = "<group>"; };
+		905933E31BFC5F5400F558C6 /* GradientTriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientTriangleView.m; path = Demos/Gradient/GradientTriangleView.m; sourceTree = "<group>"; };
+		905933E51BFC620A00F558C6 /* GradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientLayer.h; path = Demos/Gradient/GradientLayer.h; sourceTree = "<group>"; };
+		905933E61BFC620A00F558C6 /* GradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientLayer.m; path = Demos/Gradient/GradientLayer.m; sourceTree = "<group>"; };
 		9097F11D1BEE61DA00C5533E /* MeowButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeowButtonViewController.h; path = Controllers/MeowButtonViewController.h; sourceTree = "<group>"; };
 		9097F11E1BEE61DA00C5533E /* MeowButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeowButtonViewController.m; path = Controllers/MeowButtonViewController.m; sourceTree = "<group>"; };
+		90ED03301BF08E510020933E /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactViewController.h; path = Demos/Contact/ContactViewController.h; sourceTree = "<group>"; };
+		90ED03311BF08E510020933E /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactViewController.m; path = Demos/Contact/ContactViewController.m; sourceTree = "<group>"; };
+		90ED03371BF094C60020933E /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = SOURCE_ROOT; };
+		90ED03381BF094C60020933E /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = SOURCE_ROOT; };
+		90ED033C1BF0995E0020933E /* ConstantColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ConstantColors.h; path = Constants/ConstantColors.h; sourceTree = "<group>"; };
+		90ED033D1BF09BF80020933E /* ConstantDimens.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ConstantDimens.h; path = Constants/ConstantDimens.h; sourceTree = "<group>"; };
+		90ED033E1BF0AB360020933E /* ConstantFonts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ConstantFonts.h; path = Constants/ConstantFonts.h; sourceTree = "<group>"; };
 		90FA3C4B1BEA0526003ABE02 /* TableViewTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewTestController.h; path = Demos/TableView/Test1/TableViewTestController.h; sourceTree = "<group>"; };
 		90FA3C4C1BEA0526003ABE02 /* TableViewTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewTestController.m; path = Demos/TableView/Test1/TableViewTestController.m; sourceTree = "<group>"; };
 		90FA3C4E1BEA0623003ABE02 /* TableViewTest1Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewTest1Cell.h; path = Demos/TableView/Test1/TableViewTest1Cell.h; sourceTree = "<group>"; };
@@ -123,7 +147,7 @@
 		DBF24DF11AF1F09200B4DA8D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DBF24DF21AF1F09200B4DA8D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DBF24DF31AF1F09200B4DA8D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		DBF24DF51AF1F09200B4DA8D /* demoList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = demoList.plist; sourceTree = "<group>"; };
+		DBF24DF51AF1F09200B4DA8D /* demoList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = demoList.plist; path = Resouce/demoList.plist; sourceTree = "<group>"; };
 		DBF24DF61AF1F09200B4DA8D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DBF24E061AF1F1CB00B4DA8D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBF24E071AF1F1CB00B4DA8D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -157,6 +181,31 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		900597681C7AD3C5001C31FA /* GalleryImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				900597691C7AD3C5001C31FA /* GalleryImagePickerController.h */,
+				9005976A1C7AD3C5001C31FA /* GalleryImagePickerController.m */,
+				9005976B1C7AD3C5001C31FA /* GalleryImagePickerView.h */,
+				9005976C1C7AD3C5001C31FA /* GalleryImagePickerView.m */,
+			);
+			name = GalleryImagePicker;
+			path = Demos/GalleryImagePicker;
+			sourceTree = "<group>";
+		};
+		905933DE1BFC566100F558C6 /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				905933DF1BFC569E00F558C6 /* GradientTriangleController.h */,
+				905933E01BFC569E00F558C6 /* GradientTriangleController.m */,
+				905933E21BFC5F5400F558C6 /* GradientTriangleView.h */,
+				905933E31BFC5F5400F558C6 /* GradientTriangleView.m */,
+				905933E51BFC620A00F558C6 /* GradientLayer.h */,
+				905933E61BFC620A00F558C6 /* GradientLayer.m */,
+			);
+			name = Gradient;
+			sourceTree = "<group>";
+		};
 		9097F11B1BEE61AD00C5533E /* MeowButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +213,34 @@
 				9097F11E1BEE61DA00C5533E /* MeowButtonViewController.m */,
 			);
 			name = MeowButton;
+			sourceTree = "<group>";
+		};
+		90ED03331BF08E5B0020933E /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				90ED03301BF08E510020933E /* ContactViewController.h */,
+				90ED03311BF08E510020933E /* ContactViewController.m */,
+			);
+			name = Contact;
+			sourceTree = "<group>";
+		};
+		90ED03361BF094BA0020933E /* AutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				90ED03371BF094C60020933E /* UIView+AutoLayout.h */,
+				90ED03381BF094C60020933E /* UIView+AutoLayout.m */,
+			);
+			name = AutoLayout;
+			sourceTree = "<group>";
+		};
+		90ED033B1BF098A40020933E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				90ED033C1BF0995E0020933E /* ConstantColors.h */,
+				90ED033D1BF09BF80020933E /* ConstantDimens.h */,
+				90ED033E1BF0AB360020933E /* ConstantFonts.h */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 		90FA3C491BEA04B1003ABE02 /* TableView */ = {
@@ -218,12 +295,16 @@
 		DB9349841B7F93180086A490 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				DBF24DF51AF1F09200B4DA8D /* demoList.plist */,
+				900597681C7AD3C5001C31FA /* GalleryImagePicker */,
+				905933DE1BFC566100F558C6 /* Gradient */,
 				90FA3C491BEA04B1003ABE02 /* TableView */,
 				DBED164C1B8CD4AF00A25D50 /* RoundButton */,
 				DB99517B1B87577900703ACF /* DrawingBoard */,
 				DB99517A1B8756C900703ACF /* SaveToAlbum */,
 				DB223FE11B831B400028847D /* OpenAppURL */,
 				DB9349851B7F93260086A490 /* SlideBack */,
+				90ED03331BF08E5B0020933E /* Contact */,
 			);
 			name = Demos;
 			sourceTree = "<group>";
@@ -286,6 +367,7 @@
 		DBC7128A1B046C6000A690C5 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				90ED03361BF094BA0020933E /* AutoLayout */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -342,6 +424,7 @@
 				DBC712841B046AA800A690C5 /* Test */,
 				DBCED8D01B88890E00C9885B /* Category */,
 				DBC7128A1B046C6000A690C5 /* Libs */,
+				90ED033B1BF098A40020933E /* Constants */,
 				DBF24DF41AF1F09200B4DA8D /* Resouce */,
 				DBF24E0A1AF1F20E00B4DA8D /* Support */,
 			);
@@ -385,7 +468,6 @@
 			children = (
 				DBF24DF61AF1F09200B4DA8D /* Images.xcassets */,
 				DBF24DD61AF1CE1900B4DA8D /* LaunchScreen.xib */,
-				DBF24DF51AF1F09200B4DA8D /* demoList.plist */,
 			);
 			path = Resouce;
 			sourceTree = "<group>";
@@ -554,24 +636,31 @@
 				9097F11F1BEE61DA00C5533E /* MeowButtonViewController.m in Sources */,
 				DBCED8C91B8877AC00C9885B /* PaintView.m in Sources */,
 				DBCED8C51B8827DB00C9885B /* DrawingBoardMainController.m in Sources */,
+				905933E11BFC569E00F558C6 /* GradientTriangleController.m in Sources */,
 				DB29E5E51B8CA8D2006B35B3 /* SaveToAlbumMainController.m in Sources */,
+				905933E41BFC5F5400F558C6 /* GradientTriangleView.m in Sources */,
+				905933E71BFC620A00F558C6 /* GradientLayer.m in Sources */,
+				90ED03391BF094C60020933E /* UIView+AutoLayout.m in Sources */,
 				DBF24DFA1AF1F09200B4DA8D /* AppDelegate.m in Sources */,
 				DBF24E091AF1F1CB00B4DA8D /* main.m in Sources */,
 				DBCED8D31B8889C800C9885B /* MBProgressHUD+Ext.m in Sources */,
 				90FA3C511BEA0623003ABE02 /* TableViewTest1Cell.m in Sources */,
 				DB93499A1B7F9D050086A490 /* SlideBackNavigationController.m in Sources */,
+				9005976D1C7AD3C5001C31FA /* GalleryImagePickerController.m in Sources */,
 				DB29E5E91B8CA937006B35B3 /* BaseViewController.m in Sources */,
 				DBCED8CF1B8881A300C9885B /* PaintPath.m in Sources */,
 				DBED16501B8CD70C00A25D50 /* RoundButton.m in Sources */,
 				DB223FE41B831D350028847D /* OpenAppURLMainController.m in Sources */,
 				DB29E5EC1B8CA94F006B35B3 /* BaseTableViewController.m in Sources */,
 				DB9349881B7F938D0086A490 /* SlideBackMainController.m in Sources */,
+				9005976E1C7AD3C5001C31FA /* GalleryImagePickerView.m in Sources */,
 				90FA3C4D1BEA0526003ABE02 /* TableViewTestController.m in Sources */,
 				DBF24DFB1AF1F09200B4DA8D /* MainViewController.m in Sources */,
 				DB9349931B7F94890086A490 /* AViewController.m in Sources */,
 				DB9349921B7F94890086A490 /* A3ViewController.m in Sources */,
 				DB9349941B7F948A0086A490 /* BViewController.m in Sources */,
 				DBC712881B046AD700A690C5 /* JQTestViewController.m in Sources */,
+				90ED03321BF08E510020933E /* ContactViewController.m in Sources */,
 				DB9349911B7F94890086A490 /* A2ViewController.m in Sources */,
 				903C7FBD1BAADA54004AA3C2 /* MeowButton.m in Sources */,
 				90032D0C1BEF04E700F41ED3 /* UIImage+CustomImage.m in Sources */,

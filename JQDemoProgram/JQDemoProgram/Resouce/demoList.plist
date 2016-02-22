@@ -114,13 +114,43 @@
 	</dict>
 	<dict>
 		<key>code</key>
-		<string>010</string>
+		<string>011</string>
 		<key>name</key>
 		<string>MeowButton</string>
 		<key>desc</key>
 		<string>倾斜圆角矩形</string>
 		<key>controller</key>
 		<string>MeowButtonViewController</string>
+	</dict>
+	<dict>
+		<key>code</key>
+		<string>012</string>
+		<key>name</key>
+		<string>Contact</string>
+		<key>desc</key>
+		<string>获取系统通讯录</string>
+		<key>controller</key>
+		<string>ContactViewController</string>
+	</dict>
+	<dict>
+		<key>code</key>
+		<string>013</string>
+		<key>name</key>
+		<string>Gradient</string>
+		<key>desc</key>
+		<string>渐变</string>
+		<key>controller</key>
+		<string>GradientTriangleController</string>
+	</dict>
+	<dict>
+		<key>code</key>
+		<string>013</string>
+		<key>name</key>
+		<string>GalleryImagePicker</string>
+		<key>desc</key>
+		<string>画廊样式图片选择器</string>
+		<key>controller</key>
+		<string>GalleryImagePickerController</string>
 	</dict>
 </array>
 </plist>

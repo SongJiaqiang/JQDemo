@@ -79,7 +79,7 @@
     CGFloat minWidth = 100;
     CGFloat minHeight = 40;
     CGFloat leftX = 10;
-    CGFloat rightX = DefaultWindowWidth - 10 - minWidth;
+    CGFloat rightX = ScreenWidth - 10 - minWidth;
     
     RoundButton *btn3 = [[RoundButton alloc] init];
     btn3.frame = CGRectMake(leftX, 220, minWidth, minHeight);

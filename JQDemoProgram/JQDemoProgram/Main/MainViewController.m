@@ -172,15 +172,12 @@
     Demo *demo = [Demo demoWithDictionary:demoInfo];
     
     if (demo.controller) {
-        
         Class className = NSClassFromString(demo.controller);
-        [self.navigationController pushViewController:[className new] animated:YES];
-        
+        UIViewController *controller = [className new];
+        [self.navigationController pushViewController:controller animated:YES];
     }else {
-        NSLog(@"error! controller does't exit.");
+        [MBProgressHUD showError:@"this controller do not found"];
     }
-
-    
 }
 
 

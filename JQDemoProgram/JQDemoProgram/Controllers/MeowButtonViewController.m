@@ -42,8 +42,12 @@
     UIImage *bgImage = [self envolopeImage];
 //    envolopeImageView.image = [self envolopeImage];
     envolopeImageView.backgroundColor = [UIColor colorWithPatternImage:bgImage];
-    envolopeImageView.frame = CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, 5);
+    envolopeImageView.frame = CGRectMake(0, 64, 10000, 5);
     [self.view addSubview:envolopeImageView];
+    
+    [UIView animateWithDuration:100 animations:^{
+        envolopeImageView.frame = CGRectMake(-10000, 64, 100, 5);
+    }];
     
 }
 
