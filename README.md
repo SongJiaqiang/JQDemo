@@ -13,5 +13,7 @@ Just some simple demos for iOS coder
 <br/> <img alt="画板" src="https://raw.githubusercontent.com/SongJiaqiang/JQDemo/master/images/01.png" width="200px">
 * 009 保存到相册
 * 010 圆角按钮
+<br/> <img alt="画板" src="https://raw.githubusercontent.com/SongJiaqiang/JQDemo/master/images/02.png" width="200px">
+<br/> <img alt="画板" src="https://raw.githubusercontent.com/SongJiaqiang/JQDemo/master/images/03.png" width="200px">
 * 
 
