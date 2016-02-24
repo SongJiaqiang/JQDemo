@@ -14,6 +14,8 @@
 #import "DrawingBoardMainController.h"
 #import "SaveToAlbumMainController.h"
 #import "RoundButtonMainController.h"
+#import "JQBezierIconController.h"
+
 
 #import "UMFeedback.h"
 
@@ -163,6 +165,10 @@
     } else if ([@"010" isEqualToString:code]) {
         
         [self.navigationController pushViewController:[RoundButtonMainController new] animated:YES];
+        
+    }else if ([@"011" isEqualToString:code]) {
+        
+        [self.navigationController pushViewController:[JQBezierIconController new] animated:YES];
         
     }
     
