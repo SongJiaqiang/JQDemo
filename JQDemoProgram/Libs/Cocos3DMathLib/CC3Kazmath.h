@@ -35,6 +35,10 @@
 
 /** @file */	// Doxygen marker
 
+#if defined __cplusplus
+extern "C" {
+#endif
+
 #define KM_FALSE 0
 #define KM_TRUE 1
 #define kmScalar float
@@ -69,7 +73,7 @@ typedef struct {
 
 
 /** Returns a kmVec3 structure constructed from the vector components. */
-kmVec3 kmVec3Make(kmScalar x, kmScalar y, kmScalar z);
+extern kmVec3 kmVec3Make(kmScalar x, kmScalar y, kmScalar z);
 
 /** Returns the length of the vector. */
 kmScalar kmVec3Length(const kmVec3* pIn);
@@ -135,3 +139,7 @@ void kmMatSet(kmMat4 * pIn, int row, int col, float value);
 
 /** Swap the elements in the matrix at the specfied row and column coordinates. */
 void kmMatSwap(kmMat4 * pIn, int r1, int c1, int r2, int c2);
+    
+#if defined __cplusplus
+}
+#endif

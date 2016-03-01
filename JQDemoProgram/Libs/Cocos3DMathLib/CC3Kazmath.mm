@@ -33,10 +33,10 @@
  * See header file CC3Kazmath.h for full API documentation.
  */
 
-#import "CC3Kazmath.h"
-#import <stdlib.h>
-#import <memory.h>
-#import <math.h>
+#include "CC3Kazmath.h"
+#include <stdlib.h>
+#include <memory.h>
+#include <math.h>
 
 
 // Returns a kmVec3 structure constructed from the vector components.
