@@ -16,6 +16,8 @@
 		905933E11BFC569E00F558C6 /* GradientTriangleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905933E01BFC569E00F558C6 /* GradientTriangleController.m */; };
 		905933E41BFC5F5400F558C6 /* GradientTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 905933E31BFC5F5400F558C6 /* GradientTriangleView.m */; };
 		905933E71BFC620A00F558C6 /* GradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 905933E61BFC620A00F558C6 /* GradientLayer.m */; };
+		908017DF1C85AF3800CE5E29 /* item_powerup_fish.png in Resources */ = {isa = PBXBuildFile; fileRef = 908017DD1C85AF3800CE5E29 /* item_powerup_fish.png */; };
+		908017E01C85AF3800CE5E29 /* tile_floor.png in Resources */ = {isa = PBXBuildFile; fileRef = 908017DE1C85AF3800CE5E29 /* tile_floor.png */; };
 		9097F11F1BEE61DA00C5533E /* MeowButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9097F11E1BEE61DA00C5533E /* MeowButtonViewController.m */; };
 		90A8D2BE1C843CF400315B3F /* OpenGLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A8D2BD1C843CF400315B3F /* OpenGLController.m */; };
 		90A8D2C11C84406900315B3F /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A8D2C01C84406900315B3F /* OpenGLView.m */; };
@@ -29,6 +31,7 @@
 		90C3A0ED1C85730200312C5C /* CC3GLMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C3A0E51C85730100312C5C /* CC3GLMatrix.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		90C3A0EE1C85730200312C5C /* CC3Kazmath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 90C3A0E61C85730100312C5C /* CC3Kazmath.mm */; };
 		90C3A0EF1C85730200312C5C /* CC3Math.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C3A0EA1C85730200312C5C /* CC3Math.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		90C3A0F01C8590F900312C5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A8D31D1C85697900315B3F /* CoreGraphics.framework */; };
 		90ED03321BF08E510020933E /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED03311BF08E510020933E /* ContactViewController.m */; };
 		90FA3C4D1BEA0526003ABE02 /* TableViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FA3C4C1BEA0526003ABE02 /* TableViewTestController.m */; };
 		90FA3C511BEA0623003ABE02 /* TableViewTest1Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FA3C4F1BEA0623003ABE02 /* TableViewTest1Cell.m */; };
@@ -93,6 +96,8 @@
 		905933E31BFC5F5400F558C6 /* GradientTriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientTriangleView.m; path = Demos/Gradient/GradientTriangleView.m; sourceTree = "<group>"; };
 		905933E51BFC620A00F558C6 /* GradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientLayer.h; path = Demos/Gradient/GradientLayer.h; sourceTree = "<group>"; };
 		905933E61BFC620A00F558C6 /* GradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientLayer.m; path = Demos/Gradient/GradientLayer.m; sourceTree = "<group>"; };
+		908017DD1C85AF3800CE5E29 /* item_powerup_fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = item_powerup_fish.png; sourceTree = "<group>"; };
+		908017DE1C85AF3800CE5E29 /* tile_floor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile_floor.png; sourceTree = "<group>"; };
 		9097F11D1BEE61DA00C5533E /* MeowButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeowButtonViewController.h; path = Controllers/MeowButtonViewController.h; sourceTree = "<group>"; };
 		9097F11E1BEE61DA00C5533E /* MeowButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeowButtonViewController.m; path = Controllers/MeowButtonViewController.m; sourceTree = "<group>"; };
 		90A8D2BC1C843CF400315B3F /* OpenGLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLController.h; path = Demos/OpenGL/OpenGLController.h; sourceTree = "<group>"; };
@@ -191,6 +196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90C3A0F01C8590F900312C5C /* CoreGraphics.framework in Frameworks */,
 				90A8D2C51C8440B400315B3F /* QuartzCore.framework in Frameworks */,
 				90A8D2C31C8440AD00315B3F /* OpenGLES.framework in Frameworks */,
 				8CE77F9E9B80E932231DB310 /* libPods.a in Frameworks */,
@@ -241,6 +247,15 @@
 			name = Gradient;
 			sourceTree = "<group>";
 		};
+		908017DC1C85AF1B00CE5E29 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				908017DD1C85AF3800CE5E29 /* item_powerup_fish.png */,
+				908017DE1C85AF3800CE5E29 /* tile_floor.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		9097F11B1BEE61AD00C5533E /* MeowButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +268,7 @@
 		90A8D2BB1C843CD500315B3F /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				908017DC1C85AF1B00CE5E29 /* Assets */,
 				90A8D2BC1C843CF400315B3F /* OpenGLController.h */,
 				90A8D2BD1C843CF400315B3F /* OpenGLController.m */,
 				90A8D2BF1C84406900315B3F /* OpenGLView.h */,
@@ -649,6 +665,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				908017E01C85AF3800CE5E29 /* tile_floor.png in Resources */,
+				908017DF1C85AF3800CE5E29 /* item_powerup_fish.png in Resources */,
 				DBF24DD31AF1CE1900B4DA8D /* Main.storyboard in Resources */,
 				90A8D2C71C844D3300315B3F /* SimpleVertex.glsl in Resources */,
 				DBCED8D51B888B3900C9885B /* MBProgressHUD.bundle in Resources */,

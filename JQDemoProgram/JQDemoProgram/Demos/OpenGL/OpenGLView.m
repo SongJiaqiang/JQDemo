@@ -12,38 +12,19 @@
 typedef struct {
     float Position[3];
     float Color[4];
+    float TextCoord[2];
 } Vertex;
-//UIColor(red:1, green:0.32, blue:0, alpha:1)
-//UIColor(red:1, green:0.18, blue:1, alpha:1)
-
-//UIColor(red:1, green:0.88, blue:0.01, alpha:1)
-//UIColor(red:0.93, green:0.48, blue:0, alpha:1)
-//UIColor(red:1, green:0, blue:0, alpha:1)
-//UIColor(red:0, green:0.44, blue:1, alpha:1)
-// 点阵坐标，颜色值
-//const Vertex Vertices[] = {
-//    {{1, -1, 0}, {1,0.88,0.1,1}},
-//    {{1, 1, 0}, {0.93,0.48,0,1}},
-//    {{-1, 1, 0}, {0,0,1,1}},
-//    {{-1, -1, 0}, {0,0.44,1,1}}
-//};
-//
-//// OpenGL不能直接绘制矩形，需要使用2个三角形拼接
-//const GLubyte Indices[] = {
-//    0, 1, 2,
-//    2, 3, 0
-//};
 
 // 点阵坐标及颜色值
 const Vertex Vertices[] = {
-    {{1, -1, 0}, {1, 0, 0, 1}},
-    {{1, 1, 0}, {1, 0, 0, 1}},
-    {{-1, 1, 0}, {0, 1, 0, 1}},
-    {{-1, -1, 0}, {0, 1, 0, 1}},
-    {{1, -1, -1}, {1, 0, 0, 1}},
-    {{1, 1, -1}, {1, 0, 0, 1}},
-    {{-1, 1, -1}, {0, 1, 0, 1}},
-    {{-1, -1, -1}, {0, 1, 0, 1}}
+    {{1, -1, 0}, {1, 0, 0, 1}, {1,0}},
+    {{1, 1, 0}, {0, 1, 0, 1}, {1,1}},
+    {{-1, 1, 0}, {0, 0, 1, 1}, {0,1}},
+    {{-1, -1, 0}, {1, 1, 0, 1}, {0,0}},
+    {{1, -1, -1}, {0, 0, 1, 1}, {1,0}},
+    {{1, 1, -1}, {1, 1, 0, 1}, {1,1}},
+    {{-1, 1, -1}, {1, 0, 0, 1}, {0,1}},
+    {{-1, -1, -1}, {0, 1, 0, 1}, {0,0}}
 };
 // OpenGL不能直接绘制矩形，需要使用2个三角形拼接
 const GLubyte Indices[] = {
@@ -80,7 +61,6 @@ const GLubyte Indices[] = {
         
         [self setupLayer];
         [self setupContext];
-        
         [self setupDepthBuffer];
         [self setupRenderBuffer];
         [self setupFrameBuffer];
@@ -88,6 +68,9 @@ const GLubyte Indices[] = {
         [self setupVBOs];
 
         [self compileShaders];
+        
+        _floorTexture = [self setupTexture:@"tile_floor.png"];
+        _fishTexture = [self setupTexture:@"item_powerup_fish.png"];
         
 //        [self render];
         [self setupDisplayLink];
@@ -109,6 +92,34 @@ const GLubyte Indices[] = {
 - (void)setupLayer {
     _eaglLayer = (CAEAGLLayer *)self.layer;
     _eaglLayer.opaque = YES;
+}
+
+//
+- (GLuint)setupTexture:(NSString *)fileName {
+    CGImageRef spriteImage = [UIImage imageNamed:fileName].CGImage;
+    if (!spriteImage) {
+        NSLog(@"Failed to load image %@", fileName);
+        exit(1);
+    }
+    
+    size_t width = CGImageGetWidth(spriteImage);
+    size_t height = CGImageGetHeight(spriteImage);
+    
+    GLubyte *spriteData = (GLubyte *)calloc(width*height*4, sizeof(GLubyte));
+    CGContextRef spriteContext = CGBitmapContextCreate(spriteData, width, height, 8, width*4, CGImageGetColorSpace(spriteImage), kCGImageAlphaPremultipliedLast);
+    
+    CGContextDrawImage(spriteContext, CGRectMake(0, 0, width, height), spriteImage);
+    CGContextRelease(spriteContext);
+    
+    GLuint textName;
+    glGenTextures(1, &textName);
+    glBindTexture(GL_TEXTURE_2D, textName);
+    
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, spriteData);
+    
+    free(spriteData);
+    return textName;
 }
 
 // create openGL context
@@ -195,14 +206,17 @@ const GLubyte Indices[] = {
     
     glUniformMatrix4fv(_modelViewUniform, 1, 0, modelView.glMatrix);
     
-    
     glViewport(0, 0, self.frame.size.width, self.frame.size.height);
 
+    glVertexAttribPointer(_texCoordSlot, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (GLvoid *)(sizeof(float) * 7));
     glVertexAttribPointer(_positionSlot, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), 0);
     glVertexAttribPointer(_colorSlot, 4, GL_FLOAT, GL_FALSE, sizeof(Vertex), (GLvoid *)(sizeof(float) * 3));
     
-    glDrawElements(GL_TRIANGLES, sizeof(Indices)/sizeof(Indices[0]), GL_UNSIGNED_BYTE, 0);
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, _floorTexture);
+    glUniform1i(_textureUniform, 0);
     
+    glDrawElements(GL_TRIANGLES, sizeof(Indices)/sizeof(Indices[0]), GL_UNSIGNED_BYTE, 0);
     [_context presentRenderbuffer:GL_RENDERBUFFER];
 }
 
@@ -264,6 +278,12 @@ const GLubyte Indices[] = {
     
     _projectionUniform = glGetUniformLocation(programHandle, "Projection");
     _modelViewUniform = glGetUniformLocation(programHandle, "ModelView");
+    
+    // texture
+    _texCoordSlot = glGetAttribLocation(programHandle, "TexCoordIn");
+    glEnableVertexAttribArray(_texCoordSlot);
+    _textureUniform = glGetUniformLocation(programHandle, "Texture");
+    
 }
 
 @end

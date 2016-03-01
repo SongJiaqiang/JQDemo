@@ -21,4 +21,11 @@
 @property (nonatomic, assign) float currentRotation;
 @property (nonatomic, assign) GLuint depthRenderBuffer;
 
+// texture
+@property (nonatomic, assign) GLuint floorTexture;
+@property (nonatomic, assign) GLuint fishTexture;
+@property (nonatomic, assign) GLuint texCoordSlot;
+@property (nonatomic, assign) GLuint textureUniform;
+
+
 @end
