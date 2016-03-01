@@ -23,8 +23,12 @@
 		90A8D2C51C8440B400315B3F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A8D2C41C8440B400315B3F /* QuartzCore.framework */; };
 		90A8D2C71C844D3300315B3F /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 90A8D2C61C844D3300315B3F /* SimpleVertex.glsl */; };
 		90A8D2C91C84545200315B3F /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 90A8D2C81C84545200315B3F /* SimpleFragment.glsl */; };
+		90A8D2E71C8546C900315B3F /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A8D2DB1C8546C900315B3F /* UIView+AutoLayout.m */; };
+		90A8D2E81C8546C900315B3F /* CC3Foundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A8D2DE1C8546C900315B3F /* CC3Foundation.m */; };
+		90A8D2E91C8546C900315B3F /* CC3GLMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A8D2E01C8546C900315B3F /* CC3GLMatrix.m */; };
+		90A8D2EA1C8546C900315B3F /* CC3Kazmath.c in Sources */ = {isa = PBXBuildFile; fileRef = 90A8D2E11C8546C900315B3F /* CC3Kazmath.c */; };
+		90A8D2EB1C8546C900315B3F /* CC3Math.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A8D2E51C8546C900315B3F /* CC3Math.m */; };
 		90ED03321BF08E510020933E /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED03311BF08E510020933E /* ContactViewController.m */; };
-		90ED03391BF094C60020933E /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED03381BF094C60020933E /* UIView+AutoLayout.m */; };
 		90FA3C4D1BEA0526003ABE02 /* TableViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FA3C4C1BEA0526003ABE02 /* TableViewTestController.m */; };
 		90FA3C511BEA0623003ABE02 /* TableViewTest1Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FA3C4F1BEA0623003ABE02 /* TableViewTest1Cell.m */; };
 		90FA3C521BEA0623003ABE02 /* TableViewTest1Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90FA3C501BEA0623003ABE02 /* TableViewTest1Cell.xib */; };
@@ -99,10 +103,20 @@
 		90A8D2C41C8440B400315B3F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		90A8D2C61C844D3300315B3F /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleVertex.glsl; path = Demos/OpenGL/SimpleVertex.glsl; sourceTree = "<group>"; };
 		90A8D2C81C84545200315B3F /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleFragment.glsl; path = Demos/OpenGL/SimpleFragment.glsl; sourceTree = "<group>"; };
+		90A8D2DA1C8546C900315B3F /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		90A8D2DB1C8546C900315B3F /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		90A8D2DD1C8546C900315B3F /* CC3Foundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Foundation.h; sourceTree = "<group>"; };
+		90A8D2DE1C8546C900315B3F /* CC3Foundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3Foundation.m; sourceTree = "<group>"; };
+		90A8D2DF1C8546C900315B3F /* CC3GLMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3GLMatrix.h; sourceTree = "<group>"; };
+		90A8D2E01C8546C900315B3F /* CC3GLMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3GLMatrix.m; sourceTree = "<group>"; };
+		90A8D2E11C8546C900315B3F /* CC3Kazmath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CC3Kazmath.c; sourceTree = "<group>"; };
+		90A8D2E21C8546C900315B3F /* CC3Kazmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Kazmath.h; sourceTree = "<group>"; };
+		90A8D2E31C8546C900315B3F /* CC3Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Logging.h; sourceTree = "<group>"; };
+		90A8D2E41C8546C900315B3F /* CC3Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Math.h; sourceTree = "<group>"; };
+		90A8D2E51C8546C900315B3F /* CC3Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3Math.m; sourceTree = "<group>"; };
+		90A8D2E61C8546C900315B3F /* ccTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccTypes.h; sourceTree = "<group>"; };
 		90ED03301BF08E510020933E /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactViewController.h; path = Demos/Contact/ContactViewController.h; sourceTree = "<group>"; };
 		90ED03311BF08E510020933E /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactViewController.m; path = Demos/Contact/ContactViewController.m; sourceTree = "<group>"; };
-		90ED03371BF094C60020933E /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = SOURCE_ROOT; };
-		90ED03381BF094C60020933E /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = SOURCE_ROOT; };
 		90ED033C1BF0995E0020933E /* ConstantColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ConstantColors.h; path = Constants/ConstantColors.h; sourceTree = "<group>"; };
 		90ED033D1BF09BF80020933E /* ConstantDimens.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ConstantDimens.h; path = Constants/ConstantDimens.h; sourceTree = "<group>"; };
 		90ED033E1BF0AB360020933E /* ConstantFonts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ConstantFonts.h; path = Constants/ConstantFonts.h; sourceTree = "<group>"; };
@@ -244,6 +258,34 @@
 			name = OpenGL;
 			sourceTree = "<group>";
 		};
+		90A8D2D91C8546C900315B3F /* AutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				90A8D2DA1C8546C900315B3F /* UIView+AutoLayout.h */,
+				90A8D2DB1C8546C900315B3F /* UIView+AutoLayout.m */,
+			);
+			name = AutoLayout;
+			path = Libs/AutoLayout;
+			sourceTree = SOURCE_ROOT;
+		};
+		90A8D2DC1C8546C900315B3F /* Cocos3DMathLib */ = {
+			isa = PBXGroup;
+			children = (
+				90A8D2DD1C8546C900315B3F /* CC3Foundation.h */,
+				90A8D2DE1C8546C900315B3F /* CC3Foundation.m */,
+				90A8D2DF1C8546C900315B3F /* CC3GLMatrix.h */,
+				90A8D2E01C8546C900315B3F /* CC3GLMatrix.m */,
+				90A8D2E11C8546C900315B3F /* CC3Kazmath.c */,
+				90A8D2E21C8546C900315B3F /* CC3Kazmath.h */,
+				90A8D2E31C8546C900315B3F /* CC3Logging.h */,
+				90A8D2E41C8546C900315B3F /* CC3Math.h */,
+				90A8D2E51C8546C900315B3F /* CC3Math.m */,
+				90A8D2E61C8546C900315B3F /* ccTypes.h */,
+			);
+			name = Cocos3DMathLib;
+			path = Libs/Cocos3DMathLib;
+			sourceTree = SOURCE_ROOT;
+		};
 		90ED03331BF08E5B0020933E /* Contact */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,15 +293,6 @@
 				90ED03311BF08E510020933E /* ContactViewController.m */,
 			);
 			name = Contact;
-			sourceTree = "<group>";
-		};
-		90ED03361BF094BA0020933E /* AutoLayout */ = {
-			isa = PBXGroup;
-			children = (
-				90ED03371BF094C60020933E /* UIView+AutoLayout.h */,
-				90ED03381BF094C60020933E /* UIView+AutoLayout.m */,
-			);
-			name = AutoLayout;
 			sourceTree = "<group>";
 		};
 		90ED033B1BF098A40020933E /* Constants */ = {
@@ -397,7 +430,8 @@
 		DBC7128A1B046C6000A690C5 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				90ED03361BF094BA0020933E /* AutoLayout */,
+				90A8D2D91C8546C900315B3F /* AutoLayout */,
+				90A8D2DC1C8546C900315B3F /* Cocos3DMathLib */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -682,16 +716,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90A8D2EA1C8546C900315B3F /* CC3Kazmath.c in Sources */,
 				90A8D2BE1C843CF400315B3F /* OpenGLController.m in Sources */,
 				90032D101BEF130C00F41ED3 /* Demo.m in Sources */,
 				9097F11F1BEE61DA00C5533E /* MeowButtonViewController.m in Sources */,
 				DBCED8C91B8877AC00C9885B /* PaintView.m in Sources */,
 				DBCED8C51B8827DB00C9885B /* DrawingBoardMainController.m in Sources */,
+				90A8D2E71C8546C900315B3F /* UIView+AutoLayout.m in Sources */,
 				905933E11BFC569E00F558C6 /* GradientTriangleController.m in Sources */,
 				DB29E5E51B8CA8D2006B35B3 /* SaveToAlbumMainController.m in Sources */,
 				905933E41BFC5F5400F558C6 /* GradientTriangleView.m in Sources */,
 				905933E71BFC620A00F558C6 /* GradientLayer.m in Sources */,
-				90ED03391BF094C60020933E /* UIView+AutoLayout.m in Sources */,
 				DBF24DFA1AF1F09200B4DA8D /* AppDelegate.m in Sources */,
 				DBF24E091AF1F1CB00B4DA8D /* main.m in Sources */,
 				DBCED8D31B8889C800C9885B /* MBProgressHUD+Ext.m in Sources */,
@@ -704,10 +739,12 @@
 				90A8D2C11C84406900315B3F /* OpenGLView.m in Sources */,
 				DB223FE41B831D350028847D /* OpenAppURLMainController.m in Sources */,
 				DB29E5EC1B8CA94F006B35B3 /* BaseTableViewController.m in Sources */,
+				90A8D2E91C8546C900315B3F /* CC3GLMatrix.m in Sources */,
 				DB9349881B7F938D0086A490 /* SlideBackMainController.m in Sources */,
 				9005976E1C7AD3C5001C31FA /* GalleryImagePickerView.m in Sources */,
 				90FA3C4D1BEA0526003ABE02 /* TableViewTestController.m in Sources */,
 				DBF24DFB1AF1F09200B4DA8D /* MainViewController.m in Sources */,
+				90A8D2E81C8546C900315B3F /* CC3Foundation.m in Sources */,
 				DB9349931B7F94890086A490 /* AViewController.m in Sources */,
 				DB9349921B7F94890086A490 /* A3ViewController.m in Sources */,
 				DB9349941B7F948A0086A490 /* BViewController.m in Sources */,
@@ -715,6 +752,7 @@
 				90ED03321BF08E510020933E /* ContactViewController.m in Sources */,
 				DB9349911B7F94890086A490 /* A2ViewController.m in Sources */,
 				903C7FBD1BAADA54004AA3C2 /* MeowButton.m in Sources */,
+				90A8D2EB1C8546C900315B3F /* CC3Math.m in Sources */,
 				90032D0C1BEF04E700F41ED3 /* UIImage+CustomImage.m in Sources */,
 				DBED16531B8CD73100A25D50 /* RoundButtonMainController.m in Sources */,
 			);
