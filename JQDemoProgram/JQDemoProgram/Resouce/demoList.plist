@@ -4,6 +4,16 @@
 <array>
 	<dict>
 		<key>code</key>
+		<string>013</string>
+		<key>name</key>
+		<string>OpenGL</string>
+		<key>desc</key>
+		<string>OpenGL练习</string>
+		<key>controller</key>
+		<string>OpenGLController</string>
+	</dict>
+	<dict>
+		<key>code</key>
 		<string>000</string>
 		<key>name</key>
 		<string>Test</string>

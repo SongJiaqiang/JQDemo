@@ -17,6 +17,12 @@
 		905933E41BFC5F5400F558C6 /* GradientTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 905933E31BFC5F5400F558C6 /* GradientTriangleView.m */; };
 		905933E71BFC620A00F558C6 /* GradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 905933E61BFC620A00F558C6 /* GradientLayer.m */; };
 		9097F11F1BEE61DA00C5533E /* MeowButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9097F11E1BEE61DA00C5533E /* MeowButtonViewController.m */; };
+		90A8D2BE1C843CF400315B3F /* OpenGLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A8D2BD1C843CF400315B3F /* OpenGLController.m */; };
+		90A8D2C11C84406900315B3F /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A8D2C01C84406900315B3F /* OpenGLView.m */; };
+		90A8D2C31C8440AD00315B3F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A8D2C21C8440AD00315B3F /* OpenGLES.framework */; };
+		90A8D2C51C8440B400315B3F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A8D2C41C8440B400315B3F /* QuartzCore.framework */; };
+		90A8D2C71C844D3300315B3F /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 90A8D2C61C844D3300315B3F /* SimpleVertex.glsl */; };
+		90A8D2C91C84545200315B3F /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 90A8D2C81C84545200315B3F /* SimpleFragment.glsl */; };
 		90ED03321BF08E510020933E /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED03311BF08E510020933E /* ContactViewController.m */; };
 		90ED03391BF094C60020933E /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED03381BF094C60020933E /* UIView+AutoLayout.m */; };
 		90FA3C4D1BEA0526003ABE02 /* TableViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FA3C4C1BEA0526003ABE02 /* TableViewTestController.m */; };
@@ -85,6 +91,14 @@
 		905933E61BFC620A00F558C6 /* GradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientLayer.m; path = Demos/Gradient/GradientLayer.m; sourceTree = "<group>"; };
 		9097F11D1BEE61DA00C5533E /* MeowButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeowButtonViewController.h; path = Controllers/MeowButtonViewController.h; sourceTree = "<group>"; };
 		9097F11E1BEE61DA00C5533E /* MeowButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeowButtonViewController.m; path = Controllers/MeowButtonViewController.m; sourceTree = "<group>"; };
+		90A8D2BC1C843CF400315B3F /* OpenGLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLController.h; path = Demos/OpenGL/OpenGLController.h; sourceTree = "<group>"; };
+		90A8D2BD1C843CF400315B3F /* OpenGLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenGLController.m; path = Demos/OpenGL/OpenGLController.m; sourceTree = "<group>"; };
+		90A8D2BF1C84406900315B3F /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLView.h; path = Demos/OpenGL/OpenGLView.h; sourceTree = "<group>"; };
+		90A8D2C01C84406900315B3F /* OpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenGLView.m; path = Demos/OpenGL/OpenGLView.m; sourceTree = "<group>"; };
+		90A8D2C21C8440AD00315B3F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		90A8D2C41C8440B400315B3F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		90A8D2C61C844D3300315B3F /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleVertex.glsl; path = Demos/OpenGL/SimpleVertex.glsl; sourceTree = "<group>"; };
+		90A8D2C81C84545200315B3F /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleFragment.glsl; path = Demos/OpenGL/SimpleFragment.glsl; sourceTree = "<group>"; };
 		90ED03301BF08E510020933E /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactViewController.h; path = Demos/Contact/ContactViewController.h; sourceTree = "<group>"; };
 		90ED03311BF08E510020933E /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactViewController.m; path = Demos/Contact/ContactViewController.m; sourceTree = "<group>"; };
 		90ED03371BF094C60020933E /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = SOURCE_ROOT; };
@@ -158,6 +172,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90A8D2C51C8440B400315B3F /* QuartzCore.framework in Frameworks */,
+				90A8D2C31C8440AD00315B3F /* OpenGLES.framework in Frameworks */,
 				8CE77F9E9B80E932231DB310 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +229,19 @@
 				9097F11E1BEE61DA00C5533E /* MeowButtonViewController.m */,
 			);
 			name = MeowButton;
+			sourceTree = "<group>";
+		};
+		90A8D2BB1C843CD500315B3F /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				90A8D2BC1C843CF400315B3F /* OpenGLController.h */,
+				90A8D2BD1C843CF400315B3F /* OpenGLController.m */,
+				90A8D2BF1C84406900315B3F /* OpenGLView.h */,
+				90A8D2C01C84406900315B3F /* OpenGLView.m */,
+				90A8D2C61C844D3300315B3F /* SimpleVertex.glsl */,
+				90A8D2C81C84545200315B3F /* SimpleFragment.glsl */,
+			);
+			name = OpenGL;
 			sourceTree = "<group>";
 		};
 		90ED03331BF08E5B0020933E /* Contact */ = {
@@ -295,6 +324,7 @@
 		DB9349841B7F93180086A490 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				90A8D2BB1C843CD500315B3F /* OpenGL */,
 				DBF24DF51AF1F09200B4DA8D /* demoList.plist */,
 				900597681C7AD3C5001C31FA /* GalleryImagePicker */,
 				905933DE1BFC566100F558C6 /* Gradient */,
@@ -484,6 +514,8 @@
 		F5F714F287561A1689E2E70D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				90A8D2C41C8440B400315B3F /* QuartzCore.framework */,
+				90A8D2C21C8440AD00315B3F /* OpenGLES.framework */,
 				04684D3D2C5500E02878FFC0 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -574,9 +606,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBF24DD31AF1CE1900B4DA8D /* Main.storyboard in Resources */,
+				90A8D2C71C844D3300315B3F /* SimpleVertex.glsl in Resources */,
 				DBCED8D51B888B3900C9885B /* MBProgressHUD.bundle in Resources */,
 				DBC712891B046AD700A690C5 /* JQTestViewController.xib in Resources */,
 				DBF24DFD1AF1F09200B4DA8D /* Images.xcassets in Resources */,
+				90A8D2C91C84545200315B3F /* SimpleFragment.glsl in Resources */,
 				DB29E5EE1B8CAA11006B35B3 /* SaveToAlbumMainController.xib in Resources */,
 				DBF24DD81AF1CE1900B4DA8D /* LaunchScreen.xib in Resources */,
 				DBF24E081AF1F1CB00B4DA8D /* Info.plist in Resources */,
@@ -648,6 +682,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90A8D2BE1C843CF400315B3F /* OpenGLController.m in Sources */,
 				90032D101BEF130C00F41ED3 /* Demo.m in Sources */,
 				9097F11F1BEE61DA00C5533E /* MeowButtonViewController.m in Sources */,
 				DBCED8C91B8877AC00C9885B /* PaintView.m in Sources */,
@@ -666,6 +701,7 @@
 				DB29E5E91B8CA937006B35B3 /* BaseViewController.m in Sources */,
 				DBCED8CF1B8881A300C9885B /* PaintPath.m in Sources */,
 				DBED16501B8CD70C00A25D50 /* RoundButton.m in Sources */,
+				90A8D2C11C84406900315B3F /* OpenGLView.m in Sources */,
 				DB223FE41B831D350028847D /* OpenAppURLMainController.m in Sources */,
 				DB29E5EC1B8CA94F006B35B3 /* BaseTableViewController.m in Sources */,
 				DB9349881B7F938D0086A490 /* SlideBackMainController.m in Sources */,
