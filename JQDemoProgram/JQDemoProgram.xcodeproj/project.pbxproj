@@ -24,10 +24,11 @@
 		90A8D2C71C844D3300315B3F /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 90A8D2C61C844D3300315B3F /* SimpleVertex.glsl */; };
 		90A8D2C91C84545200315B3F /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 90A8D2C81C84545200315B3F /* SimpleFragment.glsl */; };
 		90A8D2E71C8546C900315B3F /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A8D2DB1C8546C900315B3F /* UIView+AutoLayout.m */; };
-		90A8D2E81C8546C900315B3F /* CC3Foundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A8D2DE1C8546C900315B3F /* CC3Foundation.m */; };
-		90A8D2E91C8546C900315B3F /* CC3GLMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A8D2E01C8546C900315B3F /* CC3GLMatrix.m */; };
-		90A8D2EA1C8546C900315B3F /* CC3Kazmath.c in Sources */ = {isa = PBXBuildFile; fileRef = 90A8D2E11C8546C900315B3F /* CC3Kazmath.c */; };
-		90A8D2EB1C8546C900315B3F /* CC3Math.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A8D2E51C8546C900315B3F /* CC3Math.m */; };
+		90A8D3051C85522E00315B3F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBF24DE21AF1CE1900B4DA8D /* Info.plist */; };
+		90C3A0EC1C85730200312C5C /* CC3Foundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C3A0E31C85730100312C5C /* CC3Foundation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		90C3A0ED1C85730200312C5C /* CC3GLMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C3A0E51C85730100312C5C /* CC3GLMatrix.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		90C3A0EE1C85730200312C5C /* CC3Kazmath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 90C3A0E61C85730100312C5C /* CC3Kazmath.mm */; };
+		90C3A0EF1C85730200312C5C /* CC3Math.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C3A0EA1C85730200312C5C /* CC3Math.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		90ED03321BF08E510020933E /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ED03311BF08E510020933E /* ContactViewController.m */; };
 		90FA3C4D1BEA0526003ABE02 /* TableViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FA3C4C1BEA0526003ABE02 /* TableViewTestController.m */; };
 		90FA3C511BEA0623003ABE02 /* TableViewTest1Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FA3C4F1BEA0623003ABE02 /* TableViewTest1Cell.m */; };
@@ -60,7 +61,6 @@
 		DBF24DFB1AF1F09200B4DA8D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF24DF31AF1F09200B4DA8D /* MainViewController.m */; };
 		DBF24DFC1AF1F09200B4DA8D /* demoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBF24DF51AF1F09200B4DA8D /* demoList.plist */; };
 		DBF24DFD1AF1F09200B4DA8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF24DF61AF1F09200B4DA8D /* Images.xcassets */; };
-		DBF24E081AF1F1CB00B4DA8D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBF24E061AF1F1CB00B4DA8D /* Info.plist */; };
 		DBF24E091AF1F1CB00B4DA8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF24E071AF1F1CB00B4DA8D /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -105,16 +105,21 @@
 		90A8D2C81C84545200315B3F /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleFragment.glsl; path = Demos/OpenGL/SimpleFragment.glsl; sourceTree = "<group>"; };
 		90A8D2DA1C8546C900315B3F /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
 		90A8D2DB1C8546C900315B3F /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
-		90A8D2DD1C8546C900315B3F /* CC3Foundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Foundation.h; sourceTree = "<group>"; };
-		90A8D2DE1C8546C900315B3F /* CC3Foundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3Foundation.m; sourceTree = "<group>"; };
-		90A8D2DF1C8546C900315B3F /* CC3GLMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3GLMatrix.h; sourceTree = "<group>"; };
-		90A8D2E01C8546C900315B3F /* CC3GLMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3GLMatrix.m; sourceTree = "<group>"; };
-		90A8D2E11C8546C900315B3F /* CC3Kazmath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CC3Kazmath.c; sourceTree = "<group>"; };
-		90A8D2E21C8546C900315B3F /* CC3Kazmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Kazmath.h; sourceTree = "<group>"; };
-		90A8D2E31C8546C900315B3F /* CC3Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Logging.h; sourceTree = "<group>"; };
-		90A8D2E41C8546C900315B3F /* CC3Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Math.h; sourceTree = "<group>"; };
-		90A8D2E51C8546C900315B3F /* CC3Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3Math.m; sourceTree = "<group>"; };
-		90A8D2E61C8546C900315B3F /* ccTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccTypes.h; sourceTree = "<group>"; };
+		90A8D30F1C85596E00315B3F /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
+		90A8D3111C85597300315B3F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		90A8D3191C85695B00315B3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		90A8D31B1C85696200315B3F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		90A8D31D1C85697900315B3F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		90C3A0E21C85730100312C5C /* CC3Foundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Foundation.h; sourceTree = "<group>"; };
+		90C3A0E31C85730100312C5C /* CC3Foundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3Foundation.m; sourceTree = "<group>"; };
+		90C3A0E41C85730100312C5C /* CC3GLMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3GLMatrix.h; sourceTree = "<group>"; };
+		90C3A0E51C85730100312C5C /* CC3GLMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3GLMatrix.m; sourceTree = "<group>"; };
+		90C3A0E61C85730100312C5C /* CC3Kazmath.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CC3Kazmath.mm; sourceTree = "<group>"; };
+		90C3A0E71C85730100312C5C /* CC3Kazmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Kazmath.h; sourceTree = "<group>"; };
+		90C3A0E81C85730100312C5C /* CC3Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Logging.h; sourceTree = "<group>"; };
+		90C3A0E91C85730200312C5C /* CC3Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Math.h; sourceTree = "<group>"; };
+		90C3A0EA1C85730200312C5C /* CC3Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3Math.m; sourceTree = "<group>"; };
+		90C3A0EB1C85730200312C5C /* ccTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccTypes.h; sourceTree = "<group>"; };
 		90ED03301BF08E510020933E /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactViewController.h; path = Demos/Contact/ContactViewController.h; sourceTree = "<group>"; };
 		90ED03311BF08E510020933E /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactViewController.m; path = Demos/Contact/ContactViewController.m; sourceTree = "<group>"; };
 		90ED033C1BF0995E0020933E /* ConstantColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ConstantColors.h; path = Constants/ConstantColors.h; sourceTree = "<group>"; };
@@ -268,19 +273,19 @@
 			path = Libs/AutoLayout;
 			sourceTree = SOURCE_ROOT;
 		};
-		90A8D2DC1C8546C900315B3F /* Cocos3DMathLib */ = {
+		90A8D2EC1C854C4800315B3F /* Cocos3DMathLib */ = {
 			isa = PBXGroup;
 			children = (
-				90A8D2DD1C8546C900315B3F /* CC3Foundation.h */,
-				90A8D2DE1C8546C900315B3F /* CC3Foundation.m */,
-				90A8D2DF1C8546C900315B3F /* CC3GLMatrix.h */,
-				90A8D2E01C8546C900315B3F /* CC3GLMatrix.m */,
-				90A8D2E11C8546C900315B3F /* CC3Kazmath.c */,
-				90A8D2E21C8546C900315B3F /* CC3Kazmath.h */,
-				90A8D2E31C8546C900315B3F /* CC3Logging.h */,
-				90A8D2E41C8546C900315B3F /* CC3Math.h */,
-				90A8D2E51C8546C900315B3F /* CC3Math.m */,
-				90A8D2E61C8546C900315B3F /* ccTypes.h */,
+				90C3A0E21C85730100312C5C /* CC3Foundation.h */,
+				90C3A0E31C85730100312C5C /* CC3Foundation.m */,
+				90C3A0E41C85730100312C5C /* CC3GLMatrix.h */,
+				90C3A0E51C85730100312C5C /* CC3GLMatrix.m */,
+				90C3A0E61C85730100312C5C /* CC3Kazmath.mm */,
+				90C3A0E71C85730100312C5C /* CC3Kazmath.h */,
+				90C3A0E81C85730100312C5C /* CC3Logging.h */,
+				90C3A0E91C85730200312C5C /* CC3Math.h */,
+				90C3A0EA1C85730200312C5C /* CC3Math.m */,
+				90C3A0EB1C85730200312C5C /* ccTypes.h */,
 			);
 			name = Cocos3DMathLib;
 			path = Libs/Cocos3DMathLib;
@@ -430,8 +435,8 @@
 		DBC7128A1B046C6000A690C5 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				90A8D2EC1C854C4800315B3F /* Cocos3DMathLib */,
 				90A8D2D91C8546C900315B3F /* AutoLayout */,
-				90A8D2DC1C8546C900315B3F /* Cocos3DMathLib */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -548,6 +553,11 @@
 		F5F714F287561A1689E2E70D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				90A8D31D1C85697900315B3F /* CoreGraphics.framework */,
+				90A8D31B1C85696200315B3F /* UIKit.framework */,
+				90A8D3191C85695B00315B3F /* Foundation.framework */,
+				90A8D3111C85597300315B3F /* libc++.tbd */,
+				90A8D30F1C85596E00315B3F /* libc.tbd */,
 				90A8D2C41C8440B400315B3F /* QuartzCore.framework */,
 				90A8D2C21C8440AD00315B3F /* OpenGLES.framework */,
 				04684D3D2C5500E02878FFC0 /* libPods.a */,
@@ -647,7 +657,7 @@
 				90A8D2C91C84545200315B3F /* SimpleFragment.glsl in Resources */,
 				DB29E5EE1B8CAA11006B35B3 /* SaveToAlbumMainController.xib in Resources */,
 				DBF24DD81AF1CE1900B4DA8D /* LaunchScreen.xib in Resources */,
-				DBF24E081AF1F1CB00B4DA8D /* Info.plist in Resources */,
+				90A8D3051C85522E00315B3F /* Info.plist in Resources */,
 				DBF24DFC1AF1F09200B4DA8D /* demoList.plist in Resources */,
 				DBCED8C61B8827DB00C9885B /* DrawingBoardMainController.xib in Resources */,
 				90FA3C521BEA0623003ABE02 /* TableViewTest1Cell.xib in Resources */,
@@ -716,7 +726,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90A8D2EA1C8546C900315B3F /* CC3Kazmath.c in Sources */,
+				90C3A0EE1C85730200312C5C /* CC3Kazmath.mm in Sources */,
 				90A8D2BE1C843CF400315B3F /* OpenGLController.m in Sources */,
 				90032D101BEF130C00F41ED3 /* Demo.m in Sources */,
 				9097F11F1BEE61DA00C5533E /* MeowButtonViewController.m in Sources */,
@@ -739,12 +749,12 @@
 				90A8D2C11C84406900315B3F /* OpenGLView.m in Sources */,
 				DB223FE41B831D350028847D /* OpenAppURLMainController.m in Sources */,
 				DB29E5EC1B8CA94F006B35B3 /* BaseTableViewController.m in Sources */,
-				90A8D2E91C8546C900315B3F /* CC3GLMatrix.m in Sources */,
+				90C3A0ED1C85730200312C5C /* CC3GLMatrix.m in Sources */,
 				DB9349881B7F938D0086A490 /* SlideBackMainController.m in Sources */,
 				9005976E1C7AD3C5001C31FA /* GalleryImagePickerView.m in Sources */,
 				90FA3C4D1BEA0526003ABE02 /* TableViewTestController.m in Sources */,
 				DBF24DFB1AF1F09200B4DA8D /* MainViewController.m in Sources */,
-				90A8D2E81C8546C900315B3F /* CC3Foundation.m in Sources */,
+				90C3A0EC1C85730200312C5C /* CC3Foundation.m in Sources */,
 				DB9349931B7F94890086A490 /* AViewController.m in Sources */,
 				DB9349921B7F94890086A490 /* A3ViewController.m in Sources */,
 				DB9349941B7F948A0086A490 /* BViewController.m in Sources */,
@@ -752,7 +762,7 @@
 				90ED03321BF08E510020933E /* ContactViewController.m in Sources */,
 				DB9349911B7F94890086A490 /* A2ViewController.m in Sources */,
 				903C7FBD1BAADA54004AA3C2 /* MeowButton.m in Sources */,
-				90A8D2EB1C8546C900315B3F /* CC3Math.m in Sources */,
+				90C3A0EF1C85730200312C5C /* CC3Math.m in Sources */,
 				90032D0C1BEF04E700F41ED3 /* UIImage+CustomImage.m in Sources */,
 				DBED16531B8CD73100A25D50 /* RoundButtonMainController.m in Sources */,
 			);

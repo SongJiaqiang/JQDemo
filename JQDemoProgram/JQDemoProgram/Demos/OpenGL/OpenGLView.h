@@ -16,5 +16,9 @@
 @property (nonatomic, strong) CAEAGLLayer *eaglLayer;
 @property (nonatomic, strong) EAGLContext *context;
 @property (nonatomic, assign) GLuint colorRenderBuffer;
+@property (nonatomic, assign) GLuint projectionUniform;
+@property (nonatomic, assign) GLuint modelViewUniform;
+@property (nonatomic, assign) float currentRotation;
+@property (nonatomic, assign) GLuint depthRenderBuffer;
 
 @end

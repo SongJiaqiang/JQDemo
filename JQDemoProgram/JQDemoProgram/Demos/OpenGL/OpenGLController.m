@@ -32,6 +32,11 @@
 }
 
 
+- (void)dealloc
+{
+    NSLog(@"OpenGLController dealloc");
+}
+
 
 
 @end
