@@ -19,18 +19,18 @@
 		904746171C8828EC000DFE79 /* image001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 904746121C8828EC000DFE79 /* image001.jpg */; };
 		904746181C8828EC000DFE79 /* themedata.thmx in Resources */ = {isa = PBXBuildFile; fileRef = 904746131C8828EC000DFE79 /* themedata.thmx */; };
 		904746191C8828EC000DFE79 /* xxx.html in Resources */ = {isa = PBXBuildFile; fileRef = 904746141C8828EC000DFE79 /* xxx.html */; };
+		9047461D1C882DF1000DFE79 /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 9047461B1C882DF1000DFE79 /* SimpleFragment.glsl */; };
+		9047461E1C882DF1000DFE79 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 9047461C1C882DF1000DFE79 /* SimpleVertex.glsl */; };
+		904746211C882DFD000DFE79 /* item_powerup_fish.png in Resources */ = {isa = PBXBuildFile; fileRef = 9047461F1C882DFD000DFE79 /* item_powerup_fish.png */; };
+		904746221C882DFD000DFE79 /* tile_floor.png in Resources */ = {isa = PBXBuildFile; fileRef = 904746201C882DFD000DFE79 /* tile_floor.png */; };
 		905933E11BFC569E00F558C6 /* GradientTriangleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905933E01BFC569E00F558C6 /* GradientTriangleController.m */; };
 		905933E41BFC5F5400F558C6 /* GradientTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 905933E31BFC5F5400F558C6 /* GradientTriangleView.m */; };
 		905933E71BFC620A00F558C6 /* GradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 905933E61BFC620A00F558C6 /* GradientLayer.m */; };
-		908017DF1C85AF3800CE5E29 /* item_powerup_fish.png in Resources */ = {isa = PBXBuildFile; fileRef = 908017DD1C85AF3800CE5E29 /* item_powerup_fish.png */; };
-		908017E01C85AF3800CE5E29 /* tile_floor.png in Resources */ = {isa = PBXBuildFile; fileRef = 908017DE1C85AF3800CE5E29 /* tile_floor.png */; };
 		9097F11F1BEE61DA00C5533E /* MeowButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9097F11E1BEE61DA00C5533E /* MeowButtonViewController.m */; };
 		90A8D2BE1C843CF400315B3F /* OpenGLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A8D2BD1C843CF400315B3F /* OpenGLController.m */; };
 		90A8D2C11C84406900315B3F /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A8D2C01C84406900315B3F /* OpenGLView.m */; };
 		90A8D2C31C8440AD00315B3F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A8D2C21C8440AD00315B3F /* OpenGLES.framework */; };
 		90A8D2C51C8440B400315B3F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A8D2C41C8440B400315B3F /* QuartzCore.framework */; };
-		90A8D2C71C844D3300315B3F /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 90A8D2C61C844D3300315B3F /* SimpleVertex.glsl */; };
-		90A8D2C91C84545200315B3F /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 90A8D2C81C84545200315B3F /* SimpleFragment.glsl */; };
 		90A8D2E71C8546C900315B3F /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A8D2DB1C8546C900315B3F /* UIView+AutoLayout.m */; };
 		90A8D3051C85522E00315B3F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBF24DE21AF1CE1900B4DA8D /* Info.plist */; };
 		90C3A0EC1C85730200312C5C /* CC3Foundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C3A0E31C85730100312C5C /* CC3Foundation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -104,14 +104,16 @@
 		904746131C8828EC000DFE79 /* themedata.thmx */ = {isa = PBXFileReference; lastKnownFileType = file; path = themedata.thmx; sourceTree = "<group>"; };
 		904746141C8828EC000DFE79 /* xxx.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = xxx.html; path = Demos/HTML/xxx.html; sourceTree = "<group>"; };
 		9047461A1C882B3E000DFE79 /* 村口店合伙人.doc */ = {isa = PBXFileReference; lastKnownFileType = file; name = "村口店合伙人.doc"; path = "Demos/HTML/村口店合伙人.doc"; sourceTree = "<group>"; };
+		9047461B1C882DF1000DFE79 /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleFragment.glsl; path = Demos/OpenGL/SimpleFragment.glsl; sourceTree = "<group>"; };
+		9047461C1C882DF1000DFE79 /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleVertex.glsl; path = Demos/OpenGL/SimpleVertex.glsl; sourceTree = "<group>"; };
+		9047461F1C882DFD000DFE79 /* item_powerup_fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = item_powerup_fish.png; path = Demos/OpenGL/item_powerup_fish.png; sourceTree = "<group>"; };
+		904746201C882DFD000DFE79 /* tile_floor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tile_floor.png; path = Demos/OpenGL/tile_floor.png; sourceTree = "<group>"; };
 		905933DF1BFC569E00F558C6 /* GradientTriangleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientTriangleController.h; path = Demos/Gradient/GradientTriangleController.h; sourceTree = "<group>"; };
 		905933E01BFC569E00F558C6 /* GradientTriangleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientTriangleController.m; path = Demos/Gradient/GradientTriangleController.m; sourceTree = "<group>"; };
 		905933E21BFC5F5400F558C6 /* GradientTriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientTriangleView.h; path = Demos/Gradient/GradientTriangleView.h; sourceTree = "<group>"; };
 		905933E31BFC5F5400F558C6 /* GradientTriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientTriangleView.m; path = Demos/Gradient/GradientTriangleView.m; sourceTree = "<group>"; };
 		905933E51BFC620A00F558C6 /* GradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientLayer.h; path = Demos/Gradient/GradientLayer.h; sourceTree = "<group>"; };
 		905933E61BFC620A00F558C6 /* GradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientLayer.m; path = Demos/Gradient/GradientLayer.m; sourceTree = "<group>"; };
-		908017DD1C85AF3800CE5E29 /* item_powerup_fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = item_powerup_fish.png; sourceTree = "<group>"; };
-		908017DE1C85AF3800CE5E29 /* tile_floor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile_floor.png; sourceTree = "<group>"; };
 		9097F11D1BEE61DA00C5533E /* MeowButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeowButtonViewController.h; path = Controllers/MeowButtonViewController.h; sourceTree = "<group>"; };
 		9097F11E1BEE61DA00C5533E /* MeowButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeowButtonViewController.m; path = Controllers/MeowButtonViewController.m; sourceTree = "<group>"; };
 		90A8D2BC1C843CF400315B3F /* OpenGLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLController.h; path = Demos/OpenGL/OpenGLController.h; sourceTree = "<group>"; };
@@ -120,8 +122,6 @@
 		90A8D2C01C84406900315B3F /* OpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenGLView.m; path = Demos/OpenGL/OpenGLView.m; sourceTree = "<group>"; };
 		90A8D2C21C8440AD00315B3F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		90A8D2C41C8440B400315B3F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		90A8D2C61C844D3300315B3F /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleVertex.glsl; path = Demos/OpenGL/SimpleVertex.glsl; sourceTree = "<group>"; };
-		90A8D2C81C84545200315B3F /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleFragment.glsl; path = Demos/OpenGL/SimpleFragment.glsl; sourceTree = "<group>"; };
 		90A8D2DA1C8546C900315B3F /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
 		90A8D2DB1C8546C900315B3F /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
 		90A8D30F1C85596E00315B3F /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
@@ -288,8 +288,8 @@
 		908017DC1C85AF1B00CE5E29 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				908017DD1C85AF3800CE5E29 /* item_powerup_fish.png */,
-				908017DE1C85AF3800CE5E29 /* tile_floor.png */,
+				9047461F1C882DFD000DFE79 /* item_powerup_fish.png */,
+				904746201C882DFD000DFE79 /* tile_floor.png */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -311,8 +311,8 @@
 				90A8D2BD1C843CF400315B3F /* OpenGLController.m */,
 				90A8D2BF1C84406900315B3F /* OpenGLView.h */,
 				90A8D2C01C84406900315B3F /* OpenGLView.m */,
-				90A8D2C61C844D3300315B3F /* SimpleVertex.glsl */,
-				90A8D2C81C84545200315B3F /* SimpleFragment.glsl */,
+				9047461B1C882DF1000DFE79 /* SimpleFragment.glsl */,
+				9047461C1C882DF1000DFE79 /* SimpleVertex.glsl */,
 			);
 			name = OpenGL;
 			sourceTree = "<group>";
@@ -706,18 +706,18 @@
 			files = (
 				904746151C8828EC000DFE79 /* filelist.xml in Resources */,
 				904746171C8828EC000DFE79 /* image001.jpg in Resources */,
-				908017E01C85AF3800CE5E29 /* tile_floor.png in Resources */,
-				908017DF1C85AF3800CE5E29 /* item_powerup_fish.png in Resources */,
 				904746181C8828EC000DFE79 /* themedata.thmx in Resources */,
+				9047461D1C882DF1000DFE79 /* SimpleFragment.glsl in Resources */,
 				DBF24DD31AF1CE1900B4DA8D /* Main.storyboard in Resources */,
-				90A8D2C71C844D3300315B3F /* SimpleVertex.glsl in Resources */,
+				904746211C882DFD000DFE79 /* item_powerup_fish.png in Resources */,
 				DBCED8D51B888B3900C9885B /* MBProgressHUD.bundle in Resources */,
+				9047461E1C882DF1000DFE79 /* SimpleVertex.glsl in Resources */,
 				DBC712891B046AD700A690C5 /* JQTestViewController.xib in Resources */,
 				904746161C8828EC000DFE79 /* header.html in Resources */,
 				DBF24DFD1AF1F09200B4DA8D /* Images.xcassets in Resources */,
-				90A8D2C91C84545200315B3F /* SimpleFragment.glsl in Resources */,
 				DB29E5EE1B8CAA11006B35B3 /* SaveToAlbumMainController.xib in Resources */,
 				DBF24DD81AF1CE1900B4DA8D /* LaunchScreen.xib in Resources */,
+				904746221C882DFD000DFE79 /* tile_floor.png in Resources */,
 				90A8D3051C85522E00315B3F /* Info.plist in Resources */,
 				DBF24DFC1AF1F09200B4DA8D /* demoList.plist in Resources */,
 				904746191C8828EC000DFE79 /* xxx.html in Resources */,
