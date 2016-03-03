@@ -6,6 +6,16 @@
 		<key>code</key>
 		<string>013</string>
 		<key>name</key>
+		<string>Loading Doc</string>
+		<key>desc</key>
+		<string>加载word文件</string>
+		<key>controller</key>
+		<string>DocViewController</string>
+	</dict>
+	<dict>
+		<key>code</key>
+		<string>013</string>
+		<key>name</key>
 		<string>OpenGL</string>
 		<key>desc</key>
 		<string>OpenGL练习</string>

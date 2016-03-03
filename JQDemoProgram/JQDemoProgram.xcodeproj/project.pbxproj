@@ -13,6 +13,12 @@
 		9005976D1C7AD3C5001C31FA /* GalleryImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9005976A1C7AD3C5001C31FA /* GalleryImagePickerController.m */; };
 		9005976E1C7AD3C5001C31FA /* GalleryImagePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9005976C1C7AD3C5001C31FA /* GalleryImagePickerView.m */; };
 		903C7FBD1BAADA54004AA3C2 /* MeowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 903C7FBC1BAADA54004AA3C2 /* MeowButton.m */; };
+		904746001C882336000DFE79 /* DocViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 904745FF1C882336000DFE79 /* DocViewController.m */; };
+		904746151C8828EC000DFE79 /* filelist.xml in Resources */ = {isa = PBXBuildFile; fileRef = 904746101C8828EC000DFE79 /* filelist.xml */; };
+		904746161C8828EC000DFE79 /* header.html in Resources */ = {isa = PBXBuildFile; fileRef = 904746111C8828EC000DFE79 /* header.html */; };
+		904746171C8828EC000DFE79 /* image001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 904746121C8828EC000DFE79 /* image001.jpg */; };
+		904746181C8828EC000DFE79 /* themedata.thmx in Resources */ = {isa = PBXBuildFile; fileRef = 904746131C8828EC000DFE79 /* themedata.thmx */; };
+		904746191C8828EC000DFE79 /* xxx.html in Resources */ = {isa = PBXBuildFile; fileRef = 904746141C8828EC000DFE79 /* xxx.html */; };
 		905933E11BFC569E00F558C6 /* GradientTriangleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905933E01BFC569E00F558C6 /* GradientTriangleController.m */; };
 		905933E41BFC5F5400F558C6 /* GradientTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 905933E31BFC5F5400F558C6 /* GradientTriangleView.m */; };
 		905933E71BFC620A00F558C6 /* GradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 905933E61BFC620A00F558C6 /* GradientLayer.m */; };
@@ -90,6 +96,14 @@
 		9005976C1C7AD3C5001C31FA /* GalleryImagePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryImagePickerView.m; sourceTree = "<group>"; };
 		903C7FBB1BAADA54004AA3C2 /* MeowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeowButton.h; sourceTree = "<group>"; };
 		903C7FBC1BAADA54004AA3C2 /* MeowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeowButton.m; sourceTree = "<group>"; };
+		904745FE1C882336000DFE79 /* DocViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DocViewController.h; path = Demos/HTML/DocViewController.h; sourceTree = "<group>"; };
+		904745FF1C882336000DFE79 /* DocViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DocViewController.m; path = Demos/HTML/DocViewController.m; sourceTree = "<group>"; };
+		904746101C8828EC000DFE79 /* filelist.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = filelist.xml; sourceTree = "<group>"; };
+		904746111C8828EC000DFE79 /* header.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = header.html; sourceTree = "<group>"; };
+		904746121C8828EC000DFE79 /* image001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image001.jpg; sourceTree = "<group>"; };
+		904746131C8828EC000DFE79 /* themedata.thmx */ = {isa = PBXFileReference; lastKnownFileType = file; path = themedata.thmx; sourceTree = "<group>"; };
+		904746141C8828EC000DFE79 /* xxx.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = xxx.html; path = Demos/HTML/xxx.html; sourceTree = "<group>"; };
+		9047461A1C882B3E000DFE79 /* 村口店合伙人.doc */ = {isa = PBXFileReference; lastKnownFileType = file; name = "村口店合伙人.doc"; path = "Demos/HTML/村口店合伙人.doc"; sourceTree = "<group>"; };
 		905933DF1BFC569E00F558C6 /* GradientTriangleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientTriangleController.h; path = Demos/Gradient/GradientTriangleController.h; sourceTree = "<group>"; };
 		905933E01BFC569E00F558C6 /* GradientTriangleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientTriangleController.m; path = Demos/Gradient/GradientTriangleController.m; sourceTree = "<group>"; };
 		905933E21BFC5F5400F558C6 /* GradientTriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientTriangleView.h; path = Demos/Gradient/GradientTriangleView.h; sourceTree = "<group>"; };
@@ -232,6 +246,30 @@
 			);
 			name = GalleryImagePicker;
 			path = Demos/GalleryImagePicker;
+			sourceTree = "<group>";
+		};
+		904746011C88233C000DFE79 /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				9047461A1C882B3E000DFE79 /* 村口店合伙人.doc */,
+				904745FE1C882336000DFE79 /* DocViewController.h */,
+				904745FF1C882336000DFE79 /* DocViewController.m */,
+				9047460F1C8828EC000DFE79 /* xxx.fld */,
+				904746141C8828EC000DFE79 /* xxx.html */,
+			);
+			name = HTML;
+			sourceTree = "<group>";
+		};
+		9047460F1C8828EC000DFE79 /* xxx.fld */ = {
+			isa = PBXGroup;
+			children = (
+				904746101C8828EC000DFE79 /* filelist.xml */,
+				904746111C8828EC000DFE79 /* header.html */,
+				904746121C8828EC000DFE79 /* image001.jpg */,
+				904746131C8828EC000DFE79 /* themedata.thmx */,
+			);
+			name = xxx.fld;
+			path = Demos/HTML/xxx.fld;
 			sourceTree = "<group>";
 		};
 		905933DE1BFC566100F558C6 /* Gradient */ = {
@@ -389,6 +427,7 @@
 				DB223FE11B831B400028847D /* OpenAppURL */,
 				DB9349851B7F93260086A490 /* SlideBack */,
 				90ED03331BF08E5B0020933E /* Contact */,
+				904746011C88233C000DFE79 /* HTML */,
 			);
 			name = Demos;
 			sourceTree = "<group>";
@@ -665,18 +704,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				904746151C8828EC000DFE79 /* filelist.xml in Resources */,
+				904746171C8828EC000DFE79 /* image001.jpg in Resources */,
 				908017E01C85AF3800CE5E29 /* tile_floor.png in Resources */,
 				908017DF1C85AF3800CE5E29 /* item_powerup_fish.png in Resources */,
+				904746181C8828EC000DFE79 /* themedata.thmx in Resources */,
 				DBF24DD31AF1CE1900B4DA8D /* Main.storyboard in Resources */,
 				90A8D2C71C844D3300315B3F /* SimpleVertex.glsl in Resources */,
 				DBCED8D51B888B3900C9885B /* MBProgressHUD.bundle in Resources */,
 				DBC712891B046AD700A690C5 /* JQTestViewController.xib in Resources */,
+				904746161C8828EC000DFE79 /* header.html in Resources */,
 				DBF24DFD1AF1F09200B4DA8D /* Images.xcassets in Resources */,
 				90A8D2C91C84545200315B3F /* SimpleFragment.glsl in Resources */,
 				DB29E5EE1B8CAA11006B35B3 /* SaveToAlbumMainController.xib in Resources */,
 				DBF24DD81AF1CE1900B4DA8D /* LaunchScreen.xib in Resources */,
 				90A8D3051C85522E00315B3F /* Info.plist in Resources */,
 				DBF24DFC1AF1F09200B4DA8D /* demoList.plist in Resources */,
+				904746191C8828EC000DFE79 /* xxx.html in Resources */,
 				DBCED8C61B8827DB00C9885B /* DrawingBoardMainController.xib in Resources */,
 				90FA3C521BEA0623003ABE02 /* TableViewTest1Cell.xib in Resources */,
 			);
@@ -771,6 +815,7 @@
 				DB9349881B7F938D0086A490 /* SlideBackMainController.m in Sources */,
 				9005976E1C7AD3C5001C31FA /* GalleryImagePickerView.m in Sources */,
 				90FA3C4D1BEA0526003ABE02 /* TableViewTestController.m in Sources */,
+				904746001C882336000DFE79 /* DocViewController.m in Sources */,
 				DBF24DFB1AF1F09200B4DA8D /* MainViewController.m in Sources */,
 				90C3A0EC1C85730200312C5C /* CC3Foundation.m in Sources */,
 				DB9349931B7F94890086A490 /* AViewController.m in Sources */,
