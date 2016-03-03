@@ -13,7 +13,7 @@
 -(void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"Loading Doc";
+    self.title = @"Loading HTML";
     
     UIWebView *webView = [[UIWebView alloc] initWithFrame:self.view.frame];
     [self.view addSubview:webView];

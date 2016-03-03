@@ -6,9 +6,9 @@
 		<key>code</key>
 		<string>013</string>
 		<key>name</key>
-		<string>Loading Doc</string>
+		<string>Loading HTML</string>
 		<key>desc</key>
-		<string>加载word文件</string>
+		<string>加载html文件</string>
 		<key>controller</key>
 		<string>DocViewController</string>
 	</dict>
