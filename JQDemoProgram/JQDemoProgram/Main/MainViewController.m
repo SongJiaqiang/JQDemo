@@ -14,6 +14,7 @@
 #import "DrawingBoardMainController.h"
 #import "SaveToAlbumMainController.h"
 #import "RoundButtonMainController.h"
+#import "JQBezierIconController.h"
 #import "TableViewTestController.h"
 
 #import "UMFeedback.h"
@@ -165,8 +166,8 @@
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
-    NSDictionary *demoInfo = self.demoList[indexPath.row];
-    Demo *demo = [Demo demoWithDictionary:demoInfo];
+    
+    Demo *demo = self.demoList[indexPath.row];
     
     if (demo.controller) {
         Class className = NSClassFromString(demo.controller);

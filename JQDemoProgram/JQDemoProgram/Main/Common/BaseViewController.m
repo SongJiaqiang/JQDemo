@@ -15,7 +15,17 @@
 @implementation BaseViewController
 
 #pragma mark - lazy
-
+-(UIView *)contentView{
+    if (!_contentView) {
+        UIView *contentView = [[UIView alloc] init];
+        contentView.backgroundColor = [UIColor whiteColor];
+        contentView.frame = CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height);
+        
+        [self.view addSubview:contentView];
+        _contentView = contentView;
+    }
+    return _contentView;
+}
 
 
 #pragma mark - system
