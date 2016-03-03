@@ -172,5 +172,15 @@
 		<key>controller</key>
 		<string>GalleryImagePickerController</string>
 	</dict>
+	<dict>
+		<key>code</key>
+		<string>011</string>
+		<key>name</key>
+		<string>UIImage+Icon</string>
+		<key>desc</key>
+		<string>使用贝塞尔曲线绘制小图标</string>
+		<key>controller</key>
+		<string></string>
+	</dict>
 </array>
 </plist>
