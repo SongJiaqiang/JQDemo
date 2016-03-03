@@ -31,7 +31,7 @@
         
         NSMutableDictionary *item3 = [NSMutableDictionary dictionary];
         item3[@"title"] = @"QQ";
-        item3[@"scheme"] = @"qq";
+        item3[@"scheme"] = @"mqq";
 
         
         NSMutableDictionary *item4 = [NSMutableDictionary dictionary];

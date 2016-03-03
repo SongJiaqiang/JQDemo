@@ -13,33 +13,40 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #define JQMainButtonRotateDuration 3.0
 
-// import
+// base controller
 #import "BaseViewController.h"
 #import "BaseTableViewController.h"
 
+// Framework
 #import "MBProgressHUD+Ext.h"
+#import "UIView+AutoLayout.h"
 
+
+// constants
+#import "ConstantDimens.h"
+#import "ConstantColors.h"
+#import "ConstantFonts.h"
 
 // keys
 #define Key_Umeng @"55db378ae0f55a1d34002e50"
 
 
-
-
 // values
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
 #define DefaultWindowWidth [UIApplication sharedApplication].keyWindow.bounds.size.width
 #define DefaultWindowHeight [UIApplication sharedApplication].keyWindow.bounds.size.height
 
 
 
 // colors
-#define ColorHexAlpha(r,g,b,a) [UIColor colorWithRed:r/256.0 green:g/256.0 blue:b/256.0 alpha:a/256.0]
-#define ColorHex(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:255/255.0]
-#define ColorWhisperPurple ColorHex(119,47,255)
-#define ColorWhisperGray ColorHex(235,235,235)
+#define ColorWithRGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define ColorWithRGB(r,g,b) ColorWithRGBA(r,g,b,1.0)
+#define ColorWithHexA(hexValue,a) [UIColor colorWithRed:((float)((hexValue & 0xFF0000) >> 16))/255.0 green ((float)((hexValue & 0xFF00) >> 8))/255.0 blue:((float)(hexValue & 0xFF))/255.0 alpha:a]
+#define ColorWithHex(hexValue) ColorWithHexA(hexValue, 1.0)
 
-
-
+#define ColorWhisperPurple ColorWithRGB(119,47,255)
+#define ColorWhisperGray ColorWithRGB(235,235,235)
 
 
 
