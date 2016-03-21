@@ -11,7 +11,6 @@
 		90032D101BEF130C00F41ED3 /* Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 90032D0F1BEF130C00F41ED3 /* Demo.m */; };
 		9005976D1C7AD3C5001C31FA /* GalleryImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9005976A1C7AD3C5001C31FA /* GalleryImagePickerController.m */; };
 		9005976E1C7AD3C5001C31FA /* GalleryImagePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9005976C1C7AD3C5001C31FA /* GalleryImagePickerView.m */; };
-		903C7FBD1BAADA54004AA3C2 /* MeowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 903C7FBC1BAADA54004AA3C2 /* MeowButton.m */; };
 		904746001C882336000DFE79 /* DocViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 904745FF1C882336000DFE79 /* DocViewController.m */; };
 		904746151C8828EC000DFE79 /* filelist.xml in Resources */ = {isa = PBXBuildFile; fileRef = 904746101C8828EC000DFE79 /* filelist.xml */; };
 		904746161C8828EC000DFE79 /* header.html in Resources */ = {isa = PBXBuildFile; fileRef = 904746111C8828EC000DFE79 /* header.html */; };
@@ -99,8 +98,6 @@
 		9005976A1C7AD3C5001C31FA /* GalleryImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryImagePickerController.m; sourceTree = "<group>"; };
 		9005976B1C7AD3C5001C31FA /* GalleryImagePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryImagePickerView.h; sourceTree = "<group>"; };
 		9005976C1C7AD3C5001C31FA /* GalleryImagePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryImagePickerView.m; sourceTree = "<group>"; };
-		903C7FBB1BAADA54004AA3C2 /* MeowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeowButton.h; sourceTree = "<group>"; };
-		903C7FBC1BAADA54004AA3C2 /* MeowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeowButton.m; sourceTree = "<group>"; };
 		904745FE1C882336000DFE79 /* DocViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DocViewController.h; path = Demos/HTML/DocViewController.h; sourceTree = "<group>"; };
 		904745FF1C882336000DFE79 /* DocViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DocViewController.m; path = Demos/HTML/DocViewController.m; sourceTree = "<group>"; };
 		904746101C8828EC000DFE79 /* filelist.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = filelist.xml; sourceTree = "<group>"; };
@@ -289,6 +286,15 @@
 			path = Demos/HTML/xxx.fld;
 			sourceTree = "<group>";
 		};
+		904746231C888ACB000DFE79 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				DB6157DD1BA9C69800235864 /* JQBezierIconController.h */,
+				DB6157DE1BA9C69800235864 /* JQBezierIconController.m */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 		904746241C888AE0000DFE79 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -447,8 +453,7 @@
 				DB99517A1B8756C900703ACF /* SaveToAlbum */,
 				DB223FE11B831B400028847D /* OpenAppURL */,
 				DB9349851B7F93260086A490 /* SlideBack */,
-				DB6157DD1BA9C69800235864 /* JQBezierIconController.h */,
-				DB6157DE1BA9C69800235864 /* JQBezierIconController.m */,
+				904746231C888ACB000DFE79 /* Icons */,
 				90ED03331BF08E5B0020933E /* Contact */,
 				904746011C88233C000DFE79 /* HTML */,
 			);
@@ -501,8 +506,8 @@
 		DBC712841B046AA800A690C5 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				903C7FBB1BAADA54004AA3C2 /* MeowButton.h */,
-				903C7FBC1BAADA54004AA3C2 /* MeowButton.m */,
+				9047462B1C889824000DFE79 /* MeowButton.h */,
+				9047462C1C889824000DFE79 /* MeowButton.m */,
 				DBC712851B046AD700A690C5 /* JQTestViewController.h */,
 				DBC712861B046AD700A690C5 /* JQTestViewController.m */,
 				DBC712871B046AD700A690C5 /* JQTestViewController.xib */,
@@ -863,9 +868,10 @@
 				DBC712881B046AD700A690C5 /* JQTestViewController.m in Sources */,
 				90ED03321BF08E510020933E /* ContactViewController.m in Sources */,
 				DB9349911B7F94890086A490 /* A2ViewController.m in Sources */,
-				903C7FBD1BAADA54004AA3C2 /* MeowButton.m in Sources */,
+				9047462D1C889824000DFE79 /* MeowButton.m in Sources */,
 				90C3A0EF1C85730200312C5C /* CC3Math.m in Sources */,
 				90032D0C1BEF04E700F41ED3 /* UIImage+CustomImage.m in Sources */,
+				9047462A1C8897CD000DFE79 /* Main.xcdatamodeld in Sources */,
 				DBED16531B8CD73100A25D50 /* RoundButtonMainController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
