@@ -6,6 +6,26 @@
 		<key>code</key>
 		<string>013</string>
 		<key>name</key>
+		<string>JSPatch</string>
+		<key>desc</key>
+		<string>JSPatch用于OC和JS之间的桥接</string>
+		<key>controller</key>
+		<string>JSPatchViewController</string>
+	</dict>
+	<dict>
+		<key>code</key>
+		<string>013</string>
+		<key>name</key>
+		<string>CoreData</string>
+		<key>desc</key>
+		<string>CoreData练习</string>
+		<key>controller</key>
+		<string>CoreDataViewController</string>
+	</dict>
+	<dict>
+		<key>code</key>
+		<string>013</string>
+		<key>name</key>
 		<string>Loading HTML</string>
 		<key>desc</key>
 		<string>加载html文件</string>

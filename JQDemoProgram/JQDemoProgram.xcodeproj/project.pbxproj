@@ -23,6 +23,10 @@
 		9047461E1C882DF1000DFE79 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 9047461C1C882DF1000DFE79 /* SimpleVertex.glsl */; };
 		904746211C882DFD000DFE79 /* item_powerup_fish.png in Resources */ = {isa = PBXBuildFile; fileRef = 9047461F1C882DFD000DFE79 /* item_powerup_fish.png */; };
 		904746221C882DFD000DFE79 /* tile_floor.png in Resources */ = {isa = PBXBuildFile; fileRef = 904746201C882DFD000DFE79 /* tile_floor.png */; };
+		904746271C888B21000DFE79 /* CoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 904746261C888B21000DFE79 /* CoreDataViewController.m */; };
+		9047462A1C8897CD000DFE79 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 904746281C8897CD000DFE79 /* Main.xcdatamodeld */; };
+		9047462D1C889824000DFE79 /* MeowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9047462C1C889824000DFE79 /* MeowButton.m */; };
+		904746561C892914000DFE79 /* NewItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 904746551C892914000DFE79 /* NewItemViewController.m */; };
 		905933E11BFC569E00F558C6 /* GradientTriangleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905933E01BFC569E00F558C6 /* GradientTriangleController.m */; };
 		905933E41BFC5F5400F558C6 /* GradientTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 905933E31BFC5F5400F558C6 /* GradientTriangleView.m */; };
 		905933E71BFC620A00F558C6 /* GradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 905933E61BFC620A00F558C6 /* GradientLayer.m */; };
@@ -110,6 +114,13 @@
 		9047461C1C882DF1000DFE79 /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleVertex.glsl; path = Demos/OpenGL/SimpleVertex.glsl; sourceTree = "<group>"; };
 		9047461F1C882DFD000DFE79 /* item_powerup_fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = item_powerup_fish.png; path = Demos/OpenGL/item_powerup_fish.png; sourceTree = "<group>"; };
 		904746201C882DFD000DFE79 /* tile_floor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tile_floor.png; path = Demos/OpenGL/tile_floor.png; sourceTree = "<group>"; };
+		904746251C888B21000DFE79 /* CoreDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataViewController.h; path = Demos/CoreData/CoreDataViewController.h; sourceTree = "<group>"; };
+		904746261C888B21000DFE79 /* CoreDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataViewController.m; path = Demos/CoreData/CoreDataViewController.m; sourceTree = "<group>"; };
+		904746291C8897CD000DFE79 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		9047462B1C889824000DFE79 /* MeowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeowButton.h; path = Demos/RoundButton/MeowButton.h; sourceTree = "<group>"; };
+		9047462C1C889824000DFE79 /* MeowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeowButton.m; path = Demos/RoundButton/MeowButton.m; sourceTree = "<group>"; };
+		904746541C892914000DFE79 /* NewItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewItemViewController.h; path = Demos/CoreData/NewItemViewController.h; sourceTree = "<group>"; };
+		904746551C892914000DFE79 /* NewItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewItemViewController.m; path = Demos/CoreData/NewItemViewController.m; sourceTree = "<group>"; };
 		905933DF1BFC569E00F558C6 /* GradientTriangleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientTriangleController.h; path = Demos/Gradient/GradientTriangleController.h; sourceTree = "<group>"; };
 		905933E01BFC569E00F558C6 /* GradientTriangleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientTriangleController.m; path = Demos/Gradient/GradientTriangleController.m; sourceTree = "<group>"; };
 		905933E21BFC5F5400F558C6 /* GradientTriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientTriangleView.h; path = Demos/Gradient/GradientTriangleView.h; sourceTree = "<group>"; };
@@ -278,6 +289,18 @@
 			path = Demos/HTML/xxx.fld;
 			sourceTree = "<group>";
 		};
+		904746241C888AE0000DFE79 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				904746251C888B21000DFE79 /* CoreDataViewController.h */,
+				904746261C888B21000DFE79 /* CoreDataViewController.m */,
+				904746281C8897CD000DFE79 /* Main.xcdatamodeld */,
+				904746541C892914000DFE79 /* NewItemViewController.h */,
+				904746551C892914000DFE79 /* NewItemViewController.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
 		905933DE1BFC566100F558C6 /* Gradient */ = {
 			isa = PBXGroup;
 			children = (
@@ -422,6 +445,7 @@
 		DB9349841B7F93180086A490 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				904746241C888AE0000DFE79 /* CoreData */,
 				90A8D2BB1C843CD500315B3F /* OpenGL */,
 				DBF24DF51AF1F09200B4DA8D /* demoList.plist */,
 				900597681C7AD3C5001C31FA /* GalleryImagePicker */,
@@ -805,6 +829,7 @@
 				9097F11F1BEE61DA00C5533E /* MeowButtonViewController.m in Sources */,
 				DBCED8C91B8877AC00C9885B /* PaintView.m in Sources */,
 				DBCED8C51B8827DB00C9885B /* DrawingBoardMainController.m in Sources */,
+				904746561C892914000DFE79 /* NewItemViewController.m in Sources */,
 				90A8D2E71C8546C900315B3F /* UIView+AutoLayout.m in Sources */,
 				905933E11BFC569E00F558C6 /* GradientTriangleController.m in Sources */,
 				DB29E5E51B8CA8D2006B35B3 /* SaveToAlbumMainController.m in Sources */,
@@ -816,6 +841,7 @@
 				DB6157DF1BA9C69800235864 /* JQBezierIconController.m in Sources */,
 				90FA3C511BEA0623003ABE02 /* TableViewTest1Cell.m in Sources */,
 				DB93499A1B7F9D050086A490 /* SlideBackNavigationController.m in Sources */,
+				904746271C888B21000DFE79 /* CoreDataViewController.m in Sources */,
 				9005976D1C7AD3C5001C31FA /* GalleryImagePickerController.m in Sources */,
 				DB29E5E91B8CA937006B35B3 /* BaseViewController.m in Sources */,
 				DB6157DC1BA9C20800235864 /* UIImage+Icon.m in Sources */,
@@ -1071,6 +1097,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		904746281C8897CD000DFE79 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				904746291C8897CD000DFE79 /* Main.xcdatamodel */,
+			);
+			currentVersion = 904746291C8897CD000DFE79 /* Main.xcdatamodel */;
+			name = Main.xcdatamodeld;
+			path = Demos/CoreData/Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DBF24DBC1AF1CE1900B4DA8D /* Project object */;
 }
