@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "UMFeedback.h"
+#import "MobClick.h"
 
 @interface AppDelegate ()
 
@@ -51,6 +52,7 @@
 #pragma mark others
 - (void) initUmeng{
     [UMFeedback setAppkey:Key_Umeng];
+    [MobClick startWithAppkey:Key_Umeng reportPolicy:BATCH channelId:nil];
 }
 
 @end

@@ -14,13 +14,11 @@
 #import "DrawingBoardMainController.h"
 #import "SaveToAlbumMainController.h"
 #import "RoundButtonMainController.h"
+#import "JQBezierIconController.h"
 #import "TableViewTestController.h"
 
 #import "UMFeedback.h"
 #import "Demo.h"
-
-#define kScreenHeight [UIScreen mainScreen].bounds.size.height
-#define kScreenWidth [UIScreen mainScreen].bounds.size.width
 
 @interface MainViewController ()
 
@@ -86,7 +84,7 @@
     [self setupSearchBar];
     
     // feedback
-    [self.feedbackButton addTarget:self action:@selector(feedbackButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.feedbackButton addTarget:self action:@selector(feedbackButtonClick:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -95,14 +93,14 @@
     self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     
     // 旋转button
-    self.feedbackButton.hidden = NO;
-    [self rotate:self.feedbackButton];
+//    self.feedbackButton.hidden = NO;
+//    [self rotate:self.feedbackButton];
 
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    self.feedbackButton.hidden = YES;
+//    self.feedbackButton.hidden = YES;
 }
 
 #pragma mark setup
@@ -111,12 +109,12 @@
     UIColor *textColor = [UIColor colorWithRed:0.3 green:0.3 blue:0.3 alpha:1];
     
     UIView *view = [UIView new];
-    view.frame = CGRectMake(0, 0, kScreenWidth, 40);
+    view.frame = CGRectMake(0, 0, ScreenWidth, 40);
     view.backgroundColor = [UIColor colorWithRed:0.98 green:0.98 blue:0.98 alpha:1];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [view addSubview:button];
-    button.frame = CGRectMake(kScreenWidth-10-60, 5, 60, 30);
+    button.frame = CGRectMake(ScreenWidth-10-60, 5, 60, 30);
     button.backgroundColor= [UIColor clearColor];
     [self roundCornerView:button];
     [button setTitle:@"GO" forState:UIControlStateNormal];
@@ -127,7 +125,7 @@
     UITextField *field = [UITextField new];
     [view addSubview:field];
     _controllerNameField = field;
-    field.frame = CGRectMake(10, 5, kScreenWidth-10-10-button.frame.size.width-10, 30);
+    field.frame = CGRectMake(10, 5, ScreenWidth-10-10-button.frame.size.width-10, 30);
     [self roundCornerView:field];
     field.font = [UIFont systemFontOfSize:14];
     field.textColor = textColor;
@@ -168,19 +166,16 @@
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
-    NSDictionary *demoInfo = self.demoList[indexPath.row];
-    Demo *demo = [Demo demoWithDictionary:demoInfo];
+    
+    Demo *demo = self.demoList[indexPath.row];
     
     if (demo.controller) {
-        
         Class className = NSClassFromString(demo.controller);
-        [self.navigationController pushViewController:[className new] animated:YES];
-        
+        UIViewController *controller = [className new];
+        [self.navigationController pushViewController:controller animated:YES];
     }else {
-        NSLog(@"error! controller does't exit.");
+        [MBProgressHUD showError:@"this controller do not found"];
     }
-
-    
 }
 
 

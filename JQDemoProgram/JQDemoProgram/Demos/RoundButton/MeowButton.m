@@ -20,14 +20,24 @@
 
 @implementation MeowButton
 
-//- (void)drawRect:(CGRect)rect {
-//    
-//    
-//    
-//    
-//}
+-(instancetype)init{
+    if (self = [super init]) {
+        
+    }
+    return self;
+}
 
-- (UIImage *)whisper_replyTagIconWithSize:(CGSize)size text:(NSString *)text textAttr:(NSDictionary *)textAttr bgColor:(UIColor *)bgColor offset:(CGFloat)offset radius:(CGFloat)radius mode:(CGPathDrawingMode)mode{
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    
+    NSMutableDictionary *attr = [NSMutableDictionary dictionary];
+    [attr setObject:[UIFont systemFontOfSize:12] forKey:NSFontAttributeName];
+    [attr setObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
+    [self setImage:[self meowImageWithSize:self.bounds.size text:self.titleLabel.text textAttr:attr bgColor:self.backgroundColor offset:5 radius:5 mode:kCGPathFill] forState:UIControlStateNormal];
+    
+}
+
+- (UIImage *)meowImageWithSize:(CGSize)size text:(NSString *)text textAttr:(NSDictionary *)textAttr bgColor:(UIColor *)bgColor offset:(CGFloat)offset radius:(CGFloat)radius mode:(CGPathDrawingMode)mode{
     //    CGFloat offset = 10;
     //    CGFloat radius = 10;
     CGFloat scale = radius/sqrtf(offset*offset + size.height*size.height);

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MeowButton : UIControl
+@interface MeowButton : UIButton
 
 @end

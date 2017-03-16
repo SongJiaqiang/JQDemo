@@ -193,8 +193,8 @@
     
     
     path.lineWidth = 1;
-//    [path stroke];
-    [path fill];
+    [path stroke];
+//    [path fill];
     
 }
 @end
